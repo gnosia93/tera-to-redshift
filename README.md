@@ -17,8 +17,11 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 
 ### Migration Method ###
 
-@ TPT - Historical Data   
-@ SCT - Newly update / Inserted Data..
+- VPN network
+- snowball is not adequate, it also takes time upload data into snowball, delivery, s3 upload time. 
+- daily based incremental migration with regdate column to reduce risk and due to low bandwidth of network.
+- use SCT for schema convertion
+    - But some issue was there .. 1/ 2/ 3/
 
 
 
