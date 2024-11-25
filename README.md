@@ -39,13 +39,13 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 - 처음에는 sct 에이전트를 사용하였으나, 테스트시 hang 이슈가 발생하여 --> tpt 로 교체함.
 
  
-### RISK ###
+### RISK / Challenge ###
 - data integrity
     - table count
     - measure sum, group by sum     
 - migration time. -- reduce...해야함..
 - sct data agent problems.
-
+- [rollup / cube](https://www.cloudthat.com/resources/blog/aws-reinvent-2022-new-sql-functionalities-in-amazon-redshift)
 
 ### 테이블 구성 ### 
 - dimension (insert / update)
