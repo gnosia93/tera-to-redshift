@@ -30,3 +30,11 @@
 
 
 @@@ Table 갯수 / 가장 큰 테이블 사이즈 ? / Migration 시간 ... ??? @@@@
+
+
+
+@@@ Performance Tuning @@@
+
+- Matetiralized View
+- DistKey -> Sames as Teradata, SortKey -> 날짜칼럼
+- 
