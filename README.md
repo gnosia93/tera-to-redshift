@@ -53,6 +53,13 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 - a bunch of summary table (only insert) : hourly, daily, monthly.
 
 
+
+### post migration ###
+
+- auto distkey / sortkey 사용 ? 
+- materialized view 사용 (느린 조인 쿼리에 대해서)  : 테라데이터는 인덱스가 있고, 대신 row format vs 레드쉬프트는 인덱스 없음 columnar.
+
+
 ### @@@ Data Type Conversion @@@  ###
 
 * [Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
