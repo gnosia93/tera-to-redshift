@@ -15,6 +15,11 @@ Additionally, if you use the -C command line argument (highly recommended for fi
 Furthermore, you can also use multiple Export operators (and tie them together with the UNION ALL syntax) and each Export operator could export a subset of the data blocks by using a WHERE clause in the SELECT statement.
 ```
 
+### Migration Method ###
+
+@ TPT - Historical Data   
+@ SCT - Newly update / Inserted Data..
+
 
 
 ### @@@ Data Type Conversion @@@  ###
