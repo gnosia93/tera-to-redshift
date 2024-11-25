@@ -21,8 +21,11 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 - snowball is not adequate, it also takes time upload data into snowball, delivery, s3 upload time. 
 - daily based incremental migration with regdate column to reduce risk and due to low bandwidth of network.
 - use SCT for schema convertion
-    - But some issue was there .. 1/ 2/ 3/
+    - data type conversion
+    - length issue.
+    - not converted SQL issue..
 
+- review DMS / glue for next gen architecture for ETL, drop. due to costs. 
 
 
 ### @@@ Data Type Conversion @@@  ###
