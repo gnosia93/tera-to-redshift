@@ -4,7 +4,7 @@
 You’ll meet with several Snowflake team members during the panel interview stage. This round typically includes a series of meetings consisting of technical, expertise, system design, behavioral, and collaboration interviews. A 30-minute Tech Talk presentation may be included depending on the level and role you are interviewing for. 
 
  - [Teradata SQL 변환 가이드](https://cloud.google.com/bigquery/docs/migration/teradata-sql?hl=ko)
-
+ - https://www.datafold.com/resources/redshift-to-snowflake-migration 
 
 
 
