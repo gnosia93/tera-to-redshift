@@ -13,7 +13,7 @@
 * [Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
 
 
-* Identify Column Update.
+* Identify 칼럼은 쓰지 않는다.
 
 
 
