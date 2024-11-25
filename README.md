@@ -35,6 +35,9 @@ Furthermore, you can also use multiple Export operators (and tie them together w
       
 - realtime streaming analysis.
     - ?
+
+- 처음에는 sct 에이전트를 사용하였으나, 테스트시 hang 이슈가 발생하여 --> tpt 로 교체함.
+
  
 ### RISK ###
 - data integrity
