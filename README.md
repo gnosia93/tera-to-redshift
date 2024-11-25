@@ -15,6 +15,11 @@ Additionally, if you use the -C command line argument (highly recommended for fi
 Furthermore, you can also use multiple Export operators (and tie them together with the UNION ALL syntax) and each Export operator could export a subset of the data blocks by using a WHERE clause in the SELECT statement.
 ```
 
+### Biz Context ###
+
+- customer needs & pain point.
+
+
 ### Migration Method ###
 
 - VPN network
@@ -38,10 +43,12 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 - migration time. -- reduce...해야함..
 - sct data agent problems.
 
+
 ### 테이블 구성 ### 
 - dimension (insert / update)
 - fact (only insert) : event(biz tx) based
 - a bunch of summary table (only insert) : hourly, daily, monthly.
+
 
 ### @@@ Data Type Conversion @@@  ###
 
