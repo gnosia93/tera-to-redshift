@@ -26,21 +26,24 @@ Furthermore, you can also use multiple Export operators (and tie them together w
     - not converted SQL issue..
 
 - review DMS / glue for next gen architecture for ETL, drop. due to costs. 
+    - used informatica as it is.. 그대로 사용함.
+      
+- realtime streaming analysis.
+    - ?
+ 
+### RISK ###
+- data integrity.
+- migration time. -- reduce...해야함..
+- sct data agent problems.
 
+### 테이블 구성 ### 
+- dimension (insert / update)
+- fact (only insert) : event(biz tx) based
+- a bunch of summary table (only insert) : hourly, daily, monthly.
 
 ### @@@ Data Type Conversion @@@  ###
 
 * [Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
-
-
-* Identify 칼럼은 쓰지 않는다.
-
-
-
-
-
-
-
 
 
 
