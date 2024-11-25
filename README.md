@@ -32,7 +32,9 @@ Furthermore, you can also use multiple Export operators (and tie them together w
     - ?
  
 ### RISK ###
-- data integrity.
+- data integrity
+    - table count
+    - measure sum, group by sum     
 - migration time. -- reduce...해야함..
 - sct data agent problems.
 
