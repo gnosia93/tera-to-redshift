@@ -5,7 +5,7 @@ You’ll meet with several Snowflake team members during the panel interview sta
 
  - [Teradata SQL 변환 가이드](https://cloud.google.com/bigquery/docs/migration/teradata-sql?hl=ko)
  - https://www.datafold.com/resources/redshift-to-snowflake-migration 
-
+ - https://www.ispirer.com/blog/teradata-migration-into-amazon-redshift 
 
 
 
