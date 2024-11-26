@@ -18,8 +18,15 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 ### Customer Context ###
 
 - Department store Operating many branches
-- Analyze their business with teradata based DW and want to reduce DW TCO.
+- Analyze their business with teradata based DW and want to reduce TCO.
 - Considering Bigdata Platform including realtime promotion analysis.
+
+#### 어떻게 설득했는가 ? ####
+- Redshift has Similiar Achitecture with teradta (MPP, postgres based)
+- but much more cheaper
+- Columnar based storage, which is more appropriate for DW.
+- Integration with S3 using redshift spectrum.    
+
 
 ### Migration Method ###
 
