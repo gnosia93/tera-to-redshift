@@ -51,10 +51,6 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - dimension (insert / update)
 - fact (only insert) : event(biz tx) based
 - a bunch of summary table (only insert) : hourly, daily, monthly.
-- test case : sales_fact
-  - daily volumn size 1gb, 300 만건.
-  - redshift loading tiem : 20 min below --> 테스트 필요.
-  - size : 1gb * 365 day * 5 year = 1825 gb
 
 @@@ sales_fact @@@
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
@@ -63,7 +59,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - datatype : small int / int / big int / char / varchar, numeric(decimal) 
 - record size : 480 bytes (16 byte * 30개 = 480 bytes) 
 - avg insert : 82 만건 (daily 375 MB)
-  - 10.99 gb / month, 131.96 gb / year
+  - 10.99 gb / month, 131.96 gb / year ---> 659.82 gb / 5 years
 - export time : xx sec
 - s3 upload time : xx sec
 - redshift import time : xx sec
