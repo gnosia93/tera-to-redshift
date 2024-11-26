@@ -126,7 +126,9 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 * [Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
 
 
+#### Task #1 - Data type conversion ####
 
+* [Teradata Source and Amazon Redshift Target](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html)
 
 #### - Task #4 - Providing Monitoring and Performance Tuning Method. ####
 - Matetiralized View
