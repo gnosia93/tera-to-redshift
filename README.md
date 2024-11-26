@@ -30,16 +30,22 @@ Predictive analytics: Uses historical data to predict likely outcomes and make e
 
 - https://m.blog.naver.com/iskrahee/70130255093 
 
+
+### Our Proposal ###
+- Redshift has Similiar Achitecture with teradta (MPP, postgres based), but much more cheaper
+- Columnar based storage, which is more appropriate for DW.
+- Integration with S3 using redshift spectrum.    
+- Seamlessly integrated with AWS sagemaker for AI/ML and other AWS analytics services
+
+
+
+
 #### Migrateion POC Overview ###
 - Migrate teradate DW data into Amazon Redshift.
 - Sugggest Optimal migration strategy ..
 - 
 
-#### How did you convince them ? ####
-- Redshift has Similiar Achitecture with teradta (MPP, postgres based), but much more cheaper
-- Columnar based storage, which is more appropriate for DW.
-- Integration with S3 using redshift spectrum.    
-- Seamlessly integrated with AWS sagemaker for AI/ML and other AWS analytics services
+
 
 #### Migration Volumes ####
 - 2TB Volumn.
