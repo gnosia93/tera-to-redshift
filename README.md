@@ -1,4 +1,5 @@
 # tera-to-redshift
+This document describe migration strategy from teradata to amazon redshift. 
 
 - Task 1 - Redshift Migration
 - Task 2 - ETL with AWS Glue 
