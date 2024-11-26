@@ -61,7 +61,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 
 - columns : 30 개, datatype : small int / int / big int / char / varchar 
 - record size : 900 bytes
-- avg insert : 82 만건 (daily 600 MB)
+- avg insert : 82 만건 (daily 703 MB)
   - 17.75 gb / month, 213 gb / year / 1.04 tb / 5 year
 - export time : xx sec
 - s3 upload time : xx sec
