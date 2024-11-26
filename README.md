@@ -46,8 +46,9 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
   
 
 #### Migration Volumes ####
-- 2TB Volumn.
-- About 100 tables.
+
+- 2TB Stoage Volumn
+- About 70 tables.
 - dimension (insert / update)
 - fact (only insert) : event(biz tx) based
 - a bunch of summary table (only insert) : daily, monthly.
