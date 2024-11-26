@@ -154,6 +154,7 @@ An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,�
 ## 참고자료 ##
 
 * [Datatype Conversion - Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
+* [DMS with VPN](https://dev.to/haintkit/case-study-how-to-replicate-database-from-aws-to-outside-3obc)
 
 * TPT
 ```
