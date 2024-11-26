@@ -84,7 +84,6 @@ the number of attributes stored within each record.
 ### Migration Architecture & ETL ###
 ![](https://github.com/gnosia93/tera-to-emr/blob/main/images/teradata-mig.png)
 
-- VPN network
 - snowball is not adequate, it also takes time upload data into snowball, delivery, s3 upload time. 
 - for fact table 
   - daily based incremental migration with regdate column to reduce risk and due to low bandwidth of network.
