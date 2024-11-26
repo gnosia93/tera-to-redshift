@@ -130,6 +130,12 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 
 * [Teradata Source and Amazon Redshift Target](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html)
 
+- Convert table datatype with SCT
+- 일반적인 데이터 타입을 사용,
+- INTERVAL data types
+An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,” that doesn’t have a specific start or end time. In Teradata, INTERVAL data is implemented as 13 distinct data types depending on the granularity of time being represented.
+converted with SCT. 
+
 #### - Task #4 - Providing Monitoring and Performance Tuning Method. ####
 - Matetiralized View
 - DistKey / SortKey -> Auto 
