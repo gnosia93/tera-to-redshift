@@ -3,9 +3,6 @@
 - Task 1 - Redshift Migration
 - Task 2 - ETL with AWS Glue 
 
-### Migration Architecture ### 
-![](https://github.com/gnosia93/tera-to-emr/blob/main/images/teradata-mig.png)
-
 
 ### Customer Context ###
 
@@ -78,6 +75,7 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 
 ### Migration Architecture & Method ###
+![](https://github.com/gnosia93/tera-to-emr/blob/main/images/teradata-mig.png)
 
 - VPN network
 - snowball is not adequate, it also takes time upload data into snowball, delivery, s3 upload time. 
