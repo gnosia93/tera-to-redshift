@@ -145,6 +145,15 @@ the number of attributes stored within each record.
 #### Item #4 - Serverless ETL sample to upgrade ETL architecture ####
 
 
+## Conclusion ##
+
+* POC was conducted for 2 months.
+* Provided optimal migration strategy with architecture and tools.
+* Enabled to move forward the migration project.
+* Customer adopted Amazon Redshift as their next generation DW
+* For ETL, due to learning curve of AWS glue, the customer stayed in informatica.
+
+
 ## 참고자료 ##
 
 * [DW Appliance 사례연구 - 애경그룹](https://m.blog.naver.com/iskrahee/70130255093) 
