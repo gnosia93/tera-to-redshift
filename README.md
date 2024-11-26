@@ -117,27 +117,6 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 
 
 
-@@@ SQL Conversion @@@
-
-
-
-
-@@@ Migration Speed @@@
-
-
-
-
-@@@ Migration Integrity @@@
-
-
-
-
-@@@ Table 갯수 / 가장 큰 테이블 사이즈 ? / Migration 시간 ... ??? @@@@
-
-
-
-@@@ Performance Tuning @@@
-
+#### - Task #4 - Providing Monitoring and Performance Tuning Method. ####
 - Matetiralized View
-- DistKey -> Sames as Teradata, SortKey -> 날짜칼럼
-- 
+- DistKey / SortKey -> Auto 
