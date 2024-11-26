@@ -123,9 +123,7 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 
 
-#### Task #1 - Data Type and Code Conversion ####
-
-* [Teradata Source and Amazon Redshift Target](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html)
+#### Task #1 - [Data Type and Code Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
 
 - With SCT, converted data type and there are no procedures & macros. 
 - Teradata used easily convertable datatypes such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
