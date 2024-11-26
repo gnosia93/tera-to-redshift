@@ -144,11 +144,9 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 
 ## 참고자료 ##
-* https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file 
-
+* [Data-Warehouse-Case-Study](https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file)
 * [Datatype Conversion - Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
 * [DMS with VPN](https://dev.to/haintkit/case-study-how-to-replicate-database-from-aws-to-outside-3obc)
-
 * TPT
 ```
 TPT will do it easily.
