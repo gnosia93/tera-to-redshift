@@ -36,11 +36,11 @@ proposed Redshift based DW with following advantage
 Check the feasiblity of redshift migration and provide optimal migration strategy.
 
 - Item #1 - Data Type and SQL Conversion _(with minial manual efforts)._
-- Item #2 - Find optimal data migration architecture and strategy _(to minimize DW downtime)._
-- Item #3 - Share Monitoring and Performance Tuning Method.
-- Item #4 - Share ETL sample for dimension table with AWS DMS and Glue. 
+- Item #2 - Find optimal data migration architecture(Strategy) _(to minimize DW downtime)._
+- Item #3 - Provde Monitoring and Performance Tuning Method for Post Migration.
+- Item #4 - Serverless ETL sample to upgrade ETL architecture _(for SCD)_.   
 
-
+_In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers to a dimension table that stores data which changes gradually over time, allowing you to track historical changes in attributes like customer addresses or product details while maintaining accurate reporting across different time periods_
   
 
 #### Migration Volumes ####
