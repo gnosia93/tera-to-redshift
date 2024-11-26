@@ -37,7 +37,7 @@ proposed Redshift based DW with following advantage
 
 Check the feasiblity of redshift migration and provide optimal migration strategy.
 
-- Task #1 - Data Type and Code Conversion with minial manual efforts.
+- Task #1 - Data Type and SQL Conversion _(with minial manual efforts)_
 - Task #2 - Find & Provide optimal data migration methodology.
 - Task #3 - Providing Monitoring and Performance Tuning Method.
 
@@ -121,7 +121,7 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 
 
-#### Task #1 - [Data Type and Code Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
+#### Task #1 - [Data Type and SQL Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
 
 - No conversion problems such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
 - For INTERVAL data type, SCT supports conversion.
