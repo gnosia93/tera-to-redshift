@@ -37,9 +37,10 @@ proposed Redshift based DW with following advantage
 
 Check the feasiblity of redshift migration and provide optimal migration strategy.
 
-- Task #1 - Data Type and SQL Conversion _(with minial manual efforts)_
-- Task #2 - Find optimal data migration architecture.
-- Task #3 - Provide Monitoring and Performance Tuning Method.
+- Item #1 - Data Type and SQL Conversion _(with minial manual efforts)._
+- Item #2 - Find optimal data migration architecture.
+- Item #3 - Provide Monitoring and Performance Tuning Method.
+- Item #4 - Provide ETL sample for dimension table using AWS Glue. 
 
 * https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file 
 
