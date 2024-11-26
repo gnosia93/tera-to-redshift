@@ -56,12 +56,12 @@ To develope migration strategy, picked sales fact table which has a large amount
 
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
-- columns : 30 개
-- datatype : small int / int / big int / char / varchar, numeric(decimal) 
-- record size : 480 bytes (16 byte * 30개 = 480 bytes) 
+- ~~columns : 30 개~~
+- ~~datatype : small int / int / big int / char / varchar, numeric(decimal)~~ 
+- tuple size : 480 bytes (16 byte * 30개 = 480 bytes) 
 - avg insert : 82 만건 (daily 375 MB)
   - 10.99 gb / month, 131.96 gb / year ---> 659.82 gb / 5 years 
-- estimated migration time for daily data 
+- estimated migration time for daily data. 
   - export time : xx sec
   - s3 upload time : xx sec
   - redshift import time : xx sec
