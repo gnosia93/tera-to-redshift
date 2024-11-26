@@ -43,7 +43,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers to a dimension table that stores data which changes gradually over time, allowing you to track historical changes in attributes like customer addresses or product details while maintaining accurate reporting across different time periods_
   
 
-#### Migration Volumes ####
+#### Source Volumes & Chracteristics ####
 
 - 2TB Stoage Volumn around 70 tables.
 - The numbers of AMPs is unknown.
