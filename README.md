@@ -19,7 +19,7 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 
 - Built EDW system on top of Teradata DW
 - ETL from department store, online shopping mall and shopping center. 
-- Analyze their customer and marketing and wanted to reduce TCO.
+- Analyze their customer and marketing data and wanted to reduce TCO.
 - Considering Predictive analytics in addtion to Descriptive analytics(BI).
 
 한국 테라데이타 (www.teradata.kr 대표 콘바스)는 애경그룹이 자사의 DW 플랫폼을 ‘그룹 통합 DW 솔루션’으로 채택했다고 13일 라스베가스에서 개막된 '테라데이타 파트너스 사용자 컨퍼런스'에서 발표했다.
