@@ -142,6 +142,8 @@ the number of attributes stored within each record.
 
 
 
+#### Item #4 - Serverless ETL sample to upgrade ETL architecture ####
+
 
 ## 참고자료 ##
 
