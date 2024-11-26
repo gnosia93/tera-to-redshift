@@ -41,9 +41,11 @@ proposed redshift based DW with following advantage
 
 
 ### POC Overview ###
-- Migrate teradate DW data into Amazon Redshift with minial downtime
-- Convert .. table, sql, procedure into redshift.
-- Sugggest Optimal migration strategy ..
+provide optimal migration strategy and ...
+
+- 데이터 타입 변환
+- 데이터 마이그레이션 방법 (최적의)
+- SQL / Procedure & Macro 변환
 
 
 #### Migration Volumes ####
