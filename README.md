@@ -51,7 +51,9 @@ _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers
 - fact table only has insert.
 - a bunch of summary table exists (only insert) : daily, monthly.
 
-@@@ sales_fact @@@
+@@@ sales_fact @@@  
+To develope migration strategy, picked sales fact table which has a large amount of data volume.  
+
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
 - columns : 30 개
