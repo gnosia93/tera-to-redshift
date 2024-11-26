@@ -69,6 +69,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
 columns : 30 개, datatype : small int / int / big int / char / varchar 
+record size : 180 bytes
 
 
 
