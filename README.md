@@ -94,7 +94,7 @@ the number of attributes stored within each record.
 - 처음에는 sct 에이전트를 사용하였으나, 테스트시 hang 이슈가 발생하여 --> tpt 로 교체함.
 
  
-### Challenge & Risk ###
+### Risk & Challenge ###
 - data integrity
     - table count
     - measure sum, group by sum     
