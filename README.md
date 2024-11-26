@@ -125,10 +125,10 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 #### Task #1 - [Data Type and Code Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
 
-- With SCT, converted data type and there are no procedures & macros. 
-- Teradata used easily convertable datatypes such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
+- With SCT, converted the data type of columns such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
 - For INTERVAL data type, SCT supports conversion.
 An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,” that doesn’t have a specific start or end time. In Teradata, INTERVAL data is implemented as 13 distinct data types depending on the granularity of time being represented
+- There are no procedures & macros.
 - Redshift didn't support ROLLUP and CUBE --> implemented with CTE.
 - Adhoc query was converted without any issue. 
 - 대소문자 이슈
