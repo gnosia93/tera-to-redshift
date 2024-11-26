@@ -77,7 +77,7 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 
 
-### Migration Method ###
+### Migration Architecture & Method ###
 
 - VPN network
 - snowball is not adequate, it also takes time upload data into snowball, delivery, s3 upload time. 
@@ -87,16 +87,6 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
   - after stopping etl, perform migration
     
 - use SCT for schema convertion
-    - data type conversion
-    - length issue.
-    - not converted SQL issue..
-
-- review DMS / glue for next gen architecture for ETL, drop. due to costs. 
-    - used informatica as it is.. 그대로 사용함.
-      
-- realtime streaming analysis.
-    - ?
-
 - 처음에는 sct 에이전트를 사용하였으나, 테스트시 hang 이슈가 발생하여 --> tpt 로 교체함.
 
  
