@@ -41,8 +41,8 @@ proposed Redshift based DW with following advantage
 - Seamlessly integrated with AWS AI/ML and analytics services.
 
 
-### POC Overview ###
-provide optimal migration strategy and ...
+### POC ###
+Check feasiblity of redshift migration and provide optimal migration strategy.
 
 - 데이터 타입 변환
 - 데이터 마이그레이션 방법 (최적의)
