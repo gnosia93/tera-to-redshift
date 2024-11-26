@@ -45,8 +45,7 @@ proposed Redshift based DW with following advantage
 
 Check the feasiblity of redshift migration and provide optimal migration strategy.
 
-- Task #1 - Data type conversion.
-- Task #2 - SQL and Procedure & Macro conversion with minial manual efforts.
+- Task #1 - Data type and Code conversion with minial manual efforts.
 - Task #3 - Find optimal data migration methodology including data integrity test.
 - Task #4 - Providing Monitoring and Performance Tuning Method.
 
@@ -126,14 +125,15 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 * [Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
 
 
-#### Task #1 - Data Type and SQL & Macro Conversion ####
+#### Task #1 - Data Type and Code Conversion ####
 
 * [Teradata Source and Amazon Redshift Target](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html)
 
-- With SCT, convert data type and macro. 
+- With SCT, converted data type and procedure & macro. 
 - Source DW just used general datatypes such as bigint, byteint, integer, number(p,s), decimal(p,s), char, varchar(n), date, time, timestamp
 - INTERVAL data types
 An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,” that doesn’t have a specific start or end time. In Teradata, INTERVAL data is implemented as 13 distinct data types depending on the granularity of time being represented. (Converted with SCT) 
+- In case of procedure & macro, there is no issue and 
 
 #### - Task #4 - Providing Monitoring and Performance Tuning Method. ####
 - Matetiralized View
