@@ -49,6 +49,9 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - Task #2 - SQL and Procedure & Macro conversion with minial manual efforts.
 - Task #3 - Find optimal data migration methodology including data integrity test.
 - Task #4 - Providing Monitoring and Performance Tuning Method.
+
+* https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file 
+
   
 
 #### Migration Volumes ####
