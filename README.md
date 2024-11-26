@@ -7,14 +7,6 @@
 ![](https://github.com/gnosia93/tera-to-emr/blob/main/images/teradata-mig.png)
 
 
-```
-TPT will do it easily.
-Just use the Export operator and the DataConnector operator (file writer).
-If you specify an instance count for the DC operator, the instance count will be the number of files generated with the output from the Export operator.
-Additionally, if you use the -C command line argument (highly recommended for file writing) then the data blocks will be written out in a round-robin fashion, meaning the files will be pretty close in size to each other.
-Furthermore, you can also use multiple Export operators (and tie them together with the UNION ALL syntax) and each Export operator could export a subset of the data blocks by using a WHERE clause in the SELECT statement.
-```
-
 ### Customer Context ###
 
 - Built EDW on top of Teradata appliance at onpremise.
@@ -144,4 +136,16 @@ An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,�
 
 #### Task #3 - Providing Monitoring and Performance Tuning Method. ####
 - Matetiralized View
-- DistKey / SortKey -> Auto 
+- DistKey / SortKey -> Auto
+
+
+## 참고자료 ##
+
+* TPT
+```
+TPT will do it easily.
+Just use the Export operator and the DataConnector operator (file writer).
+If you specify an instance count for the DC operator, the instance count will be the number of files generated with the output from the Export operator.
+Additionally, if you use the -C command line argument (highly recommended for file writing) then the data blocks will be written out in a round-robin fashion, meaning the files will be pretty close in size to each other.
+Furthermore, you can also use multiple Export operators (and tie them together with the UNION ALL syntax) and each Export operator could export a subset of the data blocks by using a WHERE clause in the SELECT statement.
+```
