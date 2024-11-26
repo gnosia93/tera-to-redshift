@@ -30,7 +30,10 @@ Predictive analytics: Uses historical data to predict likely outcomes and make e
 
 - https://m.blog.naver.com/iskrahee/70130255093 
 
-
+#### Migrateion POC Overview ###
+- Migrate teradate DW data into Amazon Redshift.
+- Sugggest Optimal migration strategy ..
+- 
 
 #### How did you convince them ? ####
 - Redshift has Similiar Achitecture with teradta (MPP, postgres based), but much more cheaper
