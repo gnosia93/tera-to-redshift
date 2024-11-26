@@ -17,8 +17,8 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 
 ### Customer Context ###
 
-- Department store Operating more than 10 branches
-- teradata based DW 
+- Department store Operating many branches
+- Analyze their business with teradata based DW and want to reduce DW costs.  
 
 ### Migration Method ###
 
