@@ -65,6 +65,9 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
   - redshift loading tiem : 20 min below --> 테스트 필요.
   - size : 1gb * 365 day * 5 year = 1825 gb
 
+@@@ sales_fact @@@
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
+
 
 ### Migration Method ###
 
