@@ -31,11 +31,13 @@ Predictive analytics: Uses historical data to predict likely outcomes and make e
 - https://m.blog.naver.com/iskrahee/70130255093 
 
 
-### Our Proposal ###
+### Proposal ###
+proposed redshift based DW and  
+
 - Redshift has Similiar Achitecture with teradta (MPP, postgres based), but much more cheaper
 - Columnar based storage, which is more appropriate for DW.
-- Integration with S3 using redshift spectrum.    
-- Seamlessly integrated with AWS sagemaker for AI/ML and other AWS analytics services
+- Integration with S3 using redshift spectrum, which offload table data into S3.    
+- Seamlessly integrated with AWS AI/ML and analytics services.
 
 
 ### POC Overview ###
