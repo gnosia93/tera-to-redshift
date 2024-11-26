@@ -1,5 +1,6 @@
 # tera-to-redshift
 
+## Migration Architecture ## 
 
 - Task 1 - Redshift Migration
 - Task 2 - ETL with AWS Glue 
@@ -114,11 +115,7 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 
 
-### post migration ###
-
-- auto distkey / sortkey 사용 ? 
-- materialized view 사용 (느린 조인 쿼리에 대해서)  : 테라데이터는 인덱스가 있고, 대신 row format vs 레드쉬프트는 인덱스 없음 columnar.
-
+## Task Details ##
 
 
 #### Task #1 - [Data Type and SQL Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
