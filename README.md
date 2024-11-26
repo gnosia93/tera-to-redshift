@@ -26,6 +26,7 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 - but much more cheaper
 - Columnar based storage, which is more appropriate for DW.
 - Integration with S3 using redshift spectrum.    
+- Easily integrate with AWS sagemaker for AI/ML and other AWS analytics services
 
 
 ### Migration Method ###
