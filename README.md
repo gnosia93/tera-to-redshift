@@ -102,7 +102,7 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 
 
-## Task Details ##
+## POC Items Detail ##
 
 
 #### Task #1 - [Data Type and SQL Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
