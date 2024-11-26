@@ -42,12 +42,14 @@ proposed Redshift based DW with following advantage
 
 
 ### POC ###
-Check feasiblity of redshift migration and provide optimal migration strategy.
 
-- 데이터 타입 변환
-- 데이터 마이그레이션 방법 (최적의)
-- SQL / Procedure & Macro 변환
+Check the feasiblity of redshift migration and provide optimal migration strategy.
 
+- Task #1 - Data type conversion.
+- Task #2 - SQL and Procedure & Macro conversion with minial manual efforts.
+- Task #3 - Find optimal data migration methodology including data integrity test.
+- Task #4 - Providing Post migration Monitoring and Performance Tuning Method.
+  
 
 #### Migration Volumes ####
 - 2TB Volumn.
