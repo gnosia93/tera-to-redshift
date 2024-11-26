@@ -66,13 +66,14 @@ To develope migration strategy, picked sales fact table which has a large amount
   - s3 upload time : xx sec
   - redshift import time : xx sec
 
-  ```
-  A typical "sales fact" record in a data warehouse, depending on the level of detail captured,
-  usually averages around 2 kilobytes (KB) in size, with some variations depending
-  on the specific data fields included and the system used.
-  however, this can fluctuate significantly based on the complexity of the sales data and
-  the number of attributes stored within each record. 
-  ```
+
+```
+A typical "sales fact" record in a data warehouse, depending on the level of detail captured,
+usually averages around 2 kilobytes (KB) in size, with some variations depending
+on the specific data fields included and the system used.
+however, this can fluctuate significantly based on the complexity of the sales data and
+the number of attributes stored within each record. 
+```
 
 
 @@@ Sales TX Sizeing @@@
