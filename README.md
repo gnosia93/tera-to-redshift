@@ -68,9 +68,10 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 @@@ sales_fact @@@
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
-columns : 30 개, datatype : small int / int / big int / char / varchar 
-record size : 180 bytes
-
+- columns : 30 개, datatype : small int / int / big int / char / varchar 
+- record size : 180 bytes
+- avg insert : 350 만건 (daily 600 MB)
+  - 17.75 gb / month, 213 gb / year
 
 
 
