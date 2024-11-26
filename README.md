@@ -132,7 +132,8 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - With SCT, converted data type and procedure & macro. 
 - Source DW just used general datatypes such as bigint, byteint, integer, number(p,s), decimal(p,s), char, varchar(n), date, time, timestamp
 - INTERVAL data types
-An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,” that doesn’t have a specific start or end time. In Teradata, INTERVAL data is implemented as 13 distinct data types depending on the granularity of time being represented. (Converted with SCT) 
+An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,” that doesn’t have a specific start or end time. In Teradata, INTERVAL data is implemented as 13 distinct data types depending on the granularity of time being represented. (Converted with SCT)
+- Redshift didn't support ROLLUP and CUBE --> implemented with CTE.
 - In case of procedure & macro, there is no issue (less than 10 pieces of uncomplicated code) 
 
 #### Task #2 - Find & Provide optimal data migration methodology ####
