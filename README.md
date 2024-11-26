@@ -126,12 +126,12 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 * [Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
 
 
-#### Task #1 - Data type conversion ####
+#### Task #1 - Data Type and SQL & Macro Conversion ####
 
 * [Teradata Source and Amazon Redshift Target](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html)
 
-- Convert table datatype with SCT
-- 일반적인 데이터 타입을 사용,
+- With SCT, convert data type and macro. 
+- Source DW just used general datatypes such as bigint, byteint, integer, number(p,s), decimal(p,s), char, varchar(n), date, time, timestamp
 - INTERVAL data types
 An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,” that doesn’t have a specific start or end time. In Teradata, INTERVAL data is implemented as 13 distinct data types depending on the granularity of time being represented.
 converted with SCT. 
