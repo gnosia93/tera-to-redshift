@@ -38,8 +38,8 @@ proposed Redshift based DW with following advantage
 Check the feasiblity of redshift migration and provide optimal migration strategy.
 
 - Task #1 - Data Type and SQL Conversion _(with minial manual efforts)_
-- Task #2 - Find & Provide optimal data migration methodology.
-- Task #3 - Providing Monitoring and Performance Tuning Method.
+- Task #2 - Find optimal data migration architecture.
+- Task #3 - Provide Monitoring and Performance Tuning Method.
 
 * https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file 
 
