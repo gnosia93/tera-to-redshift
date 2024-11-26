@@ -36,7 +36,7 @@ proposed Redshift based DW with following advantage
 Check the feasiblity of redshift migration and provide optimal migration strategy.
 
 - Item #1 - Data Type and SQL Conversion _(with minial manual efforts)._
-- Item #2 - Find optimal data migration architecture.
+- Item #2 - Find optimal data migration architecture and strategy _(to minimize DW downtime)._
 - Item #3 - Share Monitoring and Performance Tuning Method.
 - Item #4 - Share ETL sample for dimension table with AWS DMS and Glue. 
 
