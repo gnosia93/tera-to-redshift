@@ -40,7 +40,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - Item #1 - Data Type and SQL Conversion _(with minial manual efforts)._
 - Item #2 - Find optimal data migration architecture.
 - Item #3 - Provide Monitoring and Performance Tuning Method.
-- Item #4 - Provide ETL sample for dimension table using AWS Glue. 
+- Item #4 - Provide ETL sample for dimension table with AWS DMS and Glue. 
 
 * https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file 
 
