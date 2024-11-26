@@ -92,7 +92,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - migration time. -- reduce...해야함..
 - sct data agent problems.
 - [rollup / cube](https://www.cloudthat.com/resources/blog/aws-reinvent-2022-new-sql-functionalities-in-amazon-redshift)
-
+  - redshift doesn't support rollup / cube --> with cte.
 ### 테이블 구성 ### 
 
 
