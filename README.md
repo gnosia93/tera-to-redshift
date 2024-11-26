@@ -45,9 +45,9 @@ proposed Redshift based DW with following advantage
 
 Check the feasiblity of redshift migration and provide optimal migration strategy.
 
-- Task #1 - Data type and Code conversion with minial manual efforts.
-- Task #3 - Find optimal data migration methodology including data integrity test.
-- Task #4 - Providing Monitoring and Performance Tuning Method.
+- Task #1 - Data Type and Code Conversion with minial manual efforts.
+- Task #2 - Find & Provide optimal data migration methodology.
+- Task #3 - Providing Monitoring and Performance Tuning Method.
 
 * https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file 
 
@@ -135,6 +135,12 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,” that doesn’t have a specific start or end time. In Teradata, INTERVAL data is implemented as 13 distinct data types depending on the granularity of time being represented. (Converted with SCT) 
 - In case of procedure & macro, there is no issue (less than 10 pieces of uncomplicated code) 
 
-#### - Task #4 - Providing Monitoring and Performance Tuning Method. ####
+#### Task #2 - Find & Provide optimal data migration methodology ####
+- Considering network bandwith.
+- Minimize ETL downtime. 
+- provide data migration integrity.
+
+
+#### - Task #3 - Providing Monitoring and Performance Tuning Method. ####
 - Matetiralized View
 - DistKey / SortKey -> Auto 
