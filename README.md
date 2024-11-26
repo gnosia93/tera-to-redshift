@@ -68,6 +68,10 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 @@@ sales_fact @@@
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
+columns : 30 개, datatype : small int / int / big int / char / varchar 
+
+
+
 
 ### Migration Method ###
 
