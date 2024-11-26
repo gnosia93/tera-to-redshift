@@ -38,9 +38,7 @@ Predictive analytics: Uses historical data to predict likely outcomes and make e
 - Seamlessly integrated with AWS sagemaker for AI/ML and other AWS analytics services
 
 
-
-
-#### Migrateion POC Overview ###
+#### POC Overview ###
 - Migrate teradate DW data into Amazon Redshift.
 - Sugggest Optimal migration strategy ..
 - 
