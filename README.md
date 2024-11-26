@@ -1,10 +1,9 @@
 # tera-to-redshift
 
-## Migration Architecture ## 
-
 - Task 1 - Redshift Migration
 - Task 2 - ETL with AWS Glue 
 
+### Migration Architecture ### 
 ![](https://github.com/gnosia93/tera-to-emr/blob/main/images/teradata-mig.png)
 
 
