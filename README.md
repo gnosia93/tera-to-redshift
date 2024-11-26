@@ -24,6 +24,9 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 한국 테라데이타 (www.teradata.kr 대표 콘바스)는 애경그룹이 자사의 DW 플랫폼을 ‘그룹 통합 DW 솔루션’으로 채택했다고 13일 라스베가스에서 개막된 '테라데이타 파트너스 사용자 컨퍼런스'에서 발표했다.
 애경그룹(www.aekyung.co.kr, 회장 장영신)은 테라데이타 플랫폼을 전사적 DW 시스템으로 구축해 마케팅 및 고객에 대한 정보를 날짜별로 저장하고 통합함으로써 그룹 전체에 대한 비즈니스 통찰력을 얻고 이를 통해 마케팅 전개 및 대고객 서비스 강화를 실현할 수 있을 것으로 기대하고 있다. 애경그룹의 프로젝트는 지난 8월 시작해 2009년 4월까지 진행 될 예정이며 애경 백화점, 삼성플라자, 애경 면세점, 온라인 삼성몰을 시작으로 향후 제주항공까지 구축할 계획이다. 애경그룹은 통합된 고객 정보를 통해 마케팅 생산성을 극대화하고 향후 신규 시장 개척에도 활용한다는 방침이다. 한국테라데이타의 콘바스 사장은 “지난 9월에 출시한 테라데이타 플랫폼의 첫 번째 레퍼런스를 확보하게 됐다"며 "이를 계기로 비즈니스 SI사와 기술 중심 SI사와 협력하여 국내 DW 시장을 적극 공략해 나갈 방침”이라고 말했다.
 
+- https://m.blog.naver.com/iskrahee/70130255093 
+
+
 
 #### How did you convince them ? ####
 - Redshift has Similiar Achitecture with teradta (MPP, postgres based), but much more cheaper
