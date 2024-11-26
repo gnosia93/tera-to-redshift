@@ -70,7 +70,7 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 ```
 
 
-@@@ Sizeing @@@
+@@@ Sales TX Sizeing @@@
 - 1일 판매건수 : 273,972 개 (분당점, 수원점)
 - 1일 판매건수 (9개점 + 온라인) : 821,917 개 
 
