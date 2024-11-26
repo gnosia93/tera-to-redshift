@@ -60,6 +60,11 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - dimension (insert / update)
 - fact (only insert) : event(biz tx) based
 - a bunch of summary table (only insert) : hourly, daily, monthly.
+- test case : sales_fact
+  - daily volumn size 1gb, 300 만건.
+  - redshift loading tiem : 20 min below --> 테스트 필요.
+  - size : 1gb * 365 day * 5 year = 1825 gb
+
 
 ### Migration Method ###
 
