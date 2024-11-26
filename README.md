@@ -70,7 +70,11 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 
 - VPN network
 - snowball is not adequate, it also takes time upload data into snowball, delivery, s3 upload time. 
-- daily based incremental migration with regdate column to reduce risk and due to low bandwidth of network.
+- for fact table 
+  - daily based incremental migration with regdate column to reduce risk and due to low bandwidth of network.
+- for diemsion table / summary
+  - after stopping etl, perform migration
+    
 - use SCT for schema convertion
     - data type conversion
     - length issue.
