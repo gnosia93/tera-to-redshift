@@ -47,11 +47,11 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 
 #### Migration Volumes ####
 
-- 2TB Stoage Volumn
-- About 70 tables.
-- dimension (insert / update)
-- fact (only insert) : event(biz tx) based
-- a bunch of summary table (only insert) : daily, monthly.
+- 2TB Stoage Volumn around 70 tables.
+- The numbers of AMPs is unknown.
+- dimension table has insert and update.
+- fact table only has insert.
+- a bunch of summary table exists (only insert) : daily, monthly.
 
 @@@ sales_fact @@@
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
