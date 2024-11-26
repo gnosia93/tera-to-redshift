@@ -45,7 +45,7 @@ _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers
 
 #### Source Volumes & Chracteristics ####
 
-- 2TB Stoage Volumn around 70 tables.
+- 2TB Stoage Volumn with about 70 tables.
 - The numbers of AMPs is unknown.
 - dimension table has insert and update.
 - fact table only has insert.
