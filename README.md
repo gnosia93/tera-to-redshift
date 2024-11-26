@@ -134,6 +134,9 @@ An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,�
 - Redshift didn't support ROLLUP and CUBE --> implemented with CTE.
 - In case of procedure & macro, there is no issue (less than 10 pieces of uncomplicated code) 
 
+- 대소문자 이슈
+- sysdate 이슈..
+
 #### Task #2 - Find & Provide optimal data migration methodology ####
 - Considering network bandwith.
 - Minimize ETL downtime. 
