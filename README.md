@@ -50,7 +50,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - About 100 tables.
 - dimension (insert / update)
 - fact (only insert) : event(biz tx) based
-- a bunch of summary table (only insert) : hourly, daily, monthly.
+- a bunch of summary table (only insert) : daily, monthly.
 
 @@@ sales_fact @@@
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
