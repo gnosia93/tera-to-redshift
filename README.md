@@ -32,9 +32,10 @@ Predictive analytics: Uses historical data to predict likely outcomes and make e
 
 
 ### Proposal ###
-proposed redshift based DW with following advantage   
+proposed Redshift based DW with following advantage   
 
-- Redshift has Similiar Achitecture with teradta (MPP, postgres based), but much more cheaper
+- Amazon Redshift is a fully managed, petabyte-scale data warehouse that can handle petabytes of data.
+- Has similiar achitecture with teradta (MPP, postgres based), but much more cheaper
 - Columnar based storage, which is more appropriate for DW.
 - Integration with S3 using redshift spectrum, which offload table data into S3.    
 - Seamlessly integrated with AWS AI/ML and analytics services.
