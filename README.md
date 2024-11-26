@@ -48,7 +48,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - Task #1 - Data type conversion.
 - Task #2 - SQL and Procedure & Macro conversion with minial manual efforts.
 - Task #3 - Find optimal data migration methodology including data integrity test.
-- Task #4 - Providing Post migration Monitoring and Performance Tuning Method.
+- Task #4 - Providing Monitoring and Performance Tuning Method.
   
 
 #### Migration Volumes ####
