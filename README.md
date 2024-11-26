@@ -75,7 +75,7 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 
 
-### Migration Architecture & Method ###
+### Migration Architecture & ETL ###
 ![](https://github.com/gnosia93/tera-to-emr/blob/main/images/teradata-mig.png)
 
 - VPN network
