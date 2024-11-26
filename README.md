@@ -109,7 +109,6 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 - SQL compatiblity
   - [rollup / cube](https://www.cloudthat.com/resources/blog/aws-reinvent-2022-new-sql-functionalities-in-amazon-redshift)
   - redshift doesn't support rollup / cube --> implement with cte.
-### 테이블 구성 ### 
 
 
 
@@ -146,6 +145,9 @@ An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,�
 #### Task #3 - Providing Monitoring and Performance Tuning Method. ####
 - Matetiralized View
 - DistKey / SortKey -> Auto
+- 분산키 설계(DistKey Design)
+
+
 
 
 ## 참고자료 ##
