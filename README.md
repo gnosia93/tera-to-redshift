@@ -21,9 +21,8 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 - Analyze their business with teradata based DW and want to reduce TCO.
 - Considering Bigdata Platform including realtime promotion analysis.
 
-#### 어떻게 설득했는가 ? ####
-- Redshift has Similiar Achitecture with teradta (MPP, postgres based)
-- but much more cheaper
+#### How did you convince them ? ####
+- Redshift has Similiar Achitecture with teradta (MPP, postgres based), but much more cheaper
 - Columnar based storage, which is more appropriate for DW.
 - Integration with S3 using redshift spectrum.    
 - Easily integrate with AWS sagemaker for AI/ML and other AWS analytics services
