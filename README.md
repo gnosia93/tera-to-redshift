@@ -17,7 +17,7 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 
 ### Customer Context ###
 
-- Built EDW system on top of Teradata DW
+- Built EDW system on top of Teradata DW.
 - ETL from department store, online shopping mall and shopping center. 
 - Analyze their customer and marketing data and wanted to reduce TCO.
 - Considering Predictive analytics in addtion to Descriptive analytics(BI).
