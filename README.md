@@ -142,6 +142,6 @@ An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,�
 - provide data migration integrity.
 
 
-#### - Task #3 - Providing Monitoring and Performance Tuning Method. ####
+#### Task #3 - Providing Monitoring and Performance Tuning Method. ####
 - Matetiralized View
 - DistKey / SortKey -> Auto 
