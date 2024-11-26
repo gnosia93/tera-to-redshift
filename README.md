@@ -123,11 +123,10 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 #### Task #1 - [Data Type and Code Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
 
-- Converted the data type such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
+- No conversion problems such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
 - For INTERVAL data type, SCT supports conversion.
 - There are no procedures & macros.
 - Redshift didn't support ROLLUP and CUBE --> implemented with CTE.
-- Adhoc query was converted without any issue. 
 - 대소문자 이슈
 
 #### Task #2 - Find & Provide optimal data migration methodology ####
