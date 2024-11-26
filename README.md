@@ -27,6 +27,12 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 - Integration with S3 using redshift spectrum.    
 - Seamlessly integrated with AWS sagemaker for AI/ML and other AWS analytics services
 
+#### Migration Volumes ####
+- 2TB Volumn.
+- About 100 tables.
+- dimension (insert / update)
+- fact (only insert) : event(biz tx) based
+- a bunch of summary table (only insert) : hourly, daily, monthly.
 
 ### Migration Method ###
 
@@ -56,9 +62,7 @@ Furthermore, you can also use multiple Export operators (and tie them together w
 - [rollup / cube](https://www.cloudthat.com/resources/blog/aws-reinvent-2022-new-sql-functionalities-in-amazon-redshift)
 
 ### 테이블 구성 ### 
-- dimension (insert / update)
-- fact (only insert) : event(biz tx) based
-- a bunch of summary table (only insert) : hourly, daily, monthly.
+
 
 
 
