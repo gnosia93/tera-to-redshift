@@ -18,7 +18,6 @@ This document describe migration strategy from teradata to amazon redshift.
 Descriptive analytics: A traditional business intelligence method that uses visualizations like pie charts, bar charts, tables, or line graphs. It's the foundation for other types of analytics. For example, you can use descriptive analytics to determine how many sales occurred in a quarter and if they increased or decreased. 
 Predictive analytics: Uses historical data to predict likely outcomes and make educated forecasts. It's a more complex type of analytics that uses probabilities instead of simply interpreting existing facts. 
 
-- [DW Appliance 사례연구 - 애경그룹](https://m.blog.naver.com/iskrahee/70130255093) 
 
 
 ### Proposal ###
@@ -135,6 +134,8 @@ the number of attributes stored within each record.
 
 
 ## 참고자료 ##
+
+* [DW Appliance 사례연구 - 애경그룹](https://m.blog.naver.com/iskrahee/70130255093) 
 * [Data-Warehouse-Case-Study](https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file)
 * [Datatype Conversion - Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
 * [DMS with VPN](https://dev.to/haintkit/case-study-how-to-replicate-database-from-aws-to-outside-3obc)
