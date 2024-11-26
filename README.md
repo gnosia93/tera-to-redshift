@@ -10,7 +10,7 @@
 ### Customer Context ###
 
 - Built EDW on top of Teradata appliance at onpremise.
-- Data is ingested using ETL from department store, online shopping mall and shopping center. 
+- Data is ingested using ETL from department store, online mall.
 - Analyze their customer and marketing data and wanted to reduce TCO.
 - Considering Predictive analytics in addtion to Descriptive analytics(BI).
 
