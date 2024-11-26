@@ -32,7 +32,7 @@ Predictive analytics: Uses historical data to predict likely outcomes and make e
 
 
 ### Proposal ###
-proposed redshift based DW and  
+proposed redshift based DW with following advantage   
 
 - Redshift has Similiar Achitecture with teradta (MPP, postgres based), but much more cheaper
 - Columnar based storage, which is more appropriate for DW.
