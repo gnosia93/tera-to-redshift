@@ -68,6 +68,12 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - redshift import time : xx sec
 
 
+@@@ Sizeing @@@
+- 1일 판매건수 : 273,972 개 (분당점, 수원점)
+- 1일 판매건수 (9개점 + 온라인) : 821,917 개 
+
+
+
 ### Migration Method ###
 
 - VPN network
