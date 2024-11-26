@@ -125,9 +125,8 @@ A typical "sales fact" record in a data warehouse, depending on the level of det
 
 #### Task #1 - [Data Type and Code Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
 
-- With SCT, converted the data type of columns such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
+- Converted the data type such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
 - For INTERVAL data type, SCT supports conversion.
-An INTERVAL is an unanchored duration of time, like “1 year” or “2 hours,” that doesn’t have a specific start or end time. In Teradata, INTERVAL data is implemented as 13 distinct data types depending on the granularity of time being represented
 - There are no procedures & macros.
 - Redshift didn't support ROLLUP and CUBE --> implemented with CTE.
 - Adhoc query was converted without any issue. 
@@ -160,4 +159,8 @@ Just use the Export operator and the DataConnector operator (file writer).
 If you specify an instance count for the DC operator, the instance count will be the number of files generated with the output from the Export operator.
 Additionally, if you use the -C command line argument (highly recommended for file writing) then the data blocks will be written out in a round-robin fashion, meaning the files will be pretty close in size to each other.
 Furthermore, you can also use multiple Export operators (and tie them together with the UNION ALL syntax) and each Export operator could export a subset of the data blocks by using a WHERE clause in the SELECT statement.
+```
+
+* Interval
+```
 ```
