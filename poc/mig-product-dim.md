@@ -150,6 +150,9 @@ conn = conn_pool.get_connection()
 # db_export(conn)
 conn.close()
 ```
+Elapsed time for import DB: 4014.8458869457245 seconds (66 minutes)
+
+
 
 ### 3. check table size ###
 ```
