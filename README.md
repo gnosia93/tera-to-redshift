@@ -120,7 +120,7 @@ the number of attributes stored within each record.
 
 
 
-## POC Items Detail ##
+## POC Detail ##
 
 
 #### Task #1 - [Data Type and SQL Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
