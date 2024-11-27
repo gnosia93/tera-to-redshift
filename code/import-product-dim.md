@@ -1,4 +1,32 @@
-### generate dummy data ###
+### 1. create table ###
+```
+CREATE TABLE product_dim (
+  product_key bigint NOT NULL AUTO_INCREMENT,
+  id1 bigint NOT NULL,
+  id2 bigint NOT NULL,
+  id3 bigint NOT NULL,
+  id4 bigint NOT NULL,
+  id5 bigint NOT NULL,
+  id6 bigint NOT NULL,
+  id7 bigint NOT NULL,
+  id8 bigint NOT NULL,
+  id9 bigint NOT NULL,
+  dummy1 varchar(200) NOT NULL,
+  dummy2 varchar(200) NOT NULL,
+  dummy3 varchar(200) NOT NULL,
+  dummy4 varchar(200) NOT NULL,
+  dummy5 varchar(200) NOT NULL,
+  dummy6 varchar(200) NOT NULL,
+  dummy7 varchar(200) NOT NULL,
+  dummy8 varchar(200) NOT NULL,
+  dummy9 varchar(200) NOT NULL,
+  sell_yn char(1) NOT NULL,
+  regdate datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY(product_key)
+) ENGINE=InnoDB;
+```
+
+### 2. generate dummy data ###
 
 ```
 import pymysql
@@ -123,7 +151,7 @@ conn = conn_pool.get_connection()
 conn.close()
 ```
 
-### check table size ###
+### 3. check table size ###
 ```
 SELECT table_name,
        ROUND((data_length+index_length)/1024/1024, 1) AS 'Size(MB)'
@@ -131,7 +159,7 @@ FROM information_schema.tables
 where table_name = 'product_dim';
 ```
 
-### export to csv file ###
+### 4. export to csv file ###
 
 ```
 start_time=$(date +%s);\
