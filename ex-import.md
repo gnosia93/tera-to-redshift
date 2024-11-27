@@ -216,5 +216,6 @@ CSV IGNOREHEADER 1
 ```
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/redshift_copy.png)
 
+소요시간 - 13.9 초
 
 
