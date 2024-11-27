@@ -161,5 +161,5 @@ echo $elapsed
 ```
 
 ### Import to Redshift ###
-
+* ra3.large (2node)
 
