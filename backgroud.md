@@ -1,38 +1,8 @@
-## Panel Interviews ##
-
-3. Panel Interviews - three to five 60-minute interviews
-You’ll meet with several Snowflake team members during the panel interview stage. This round typically includes a series of meetings consisting of technical, expertise, system design, behavioral, and collaboration interviews. A 30-minute Tech Talk presentation may be included depending on the level and role you are interviewing for. 
+## SQL / Tuning ##
 
  - [Teradata SQL 변환 가이드](https://cloud.google.com/bigquery/docs/migration/teradata-sql?hl=ko)
  - https://www.datafold.com/resources/redshift-to-snowflake-migration 
  - https://www.ispirer.com/blog/teradata-migration-into-amazon-redshift 
-
-
-
-## [Snowflake Interview Tip](https://interviewing.io/snowflake-interview-questions) ##
-
-Knowing Snowflake isn't required, knowing good architecture patterns for big data, data pipelines, medallion architecture, etc... is required.
-
-Soft skills are huge, as it's a consulting role, so make sure you're ready for questions and for people to question the assertions/decisions you're discussing.
-
-The more satellite material you know (vendor techs, integrations, connectors, languages used [Python, SQL, Java, Scala, Javascript], the objects themselves, etc...) the better, as it makes it easier to talk intelligently about what you're trying to do.
-
-Certs would go a LONG way, but most SA's come in w no Snowflake cert, as I understand it.
-
-Just keep in mind what they're looking for. People to help architect good Snowflake accounts for clients. People who can do that don't always know Snowflake in-and-out. More often, they know pipelines and data well, and learn how to do those same things within Snowflake. Snowflake will teach you, and help you get your cert. You just need to show them your experience will make that easy and quick.
-
-
-*
-Mine wasn’t too difficult, talking about typical data structures and things like partitions, compression, etc. Nothing code related until I took a the tech test which was still fairly basic to intermediate SQL.
-
-*
-I had an exploratory interview with a sales engineering mgr that I knew. She didn’t have any jobs just wanted to see my skill set. Pretty basic sql and data warehousing / modeling questions. Did not cover any python.
-
-
-* clustering - https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions
-
-
-## SQL / Tuning ##
 
 
 ## [데이터베이스 이론](https://velog.io/@heyksw/CS-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4) ##
@@ -84,11 +54,6 @@ As illustrated in Figure 1-3, dimension tables often have many columns or attrib
 
 * Fact Tables for Measurements    
   The fact table in a dimensional model stores the performance measurements resulting from an organization’s business process events. You should strive to store the low-level measurement data resulting from a business process in a single dimen- sional model. Because measurement data is overwhelmingly the largest set of data, it should not be replicated in multiple places for multiple organizational functions around the enterprise. Allowing business users from multiple organizations to access a single centralized repository for each set of measurement data ensures the use of consistent data throughout the enterprise.
-
-
-
-
-
 
 
 
@@ -212,72 +177,8 @@ Referential Integrity.
 
 
 
-
-
-## teradata to redshift ##
-* [AK 프라자 사례](https://aws.amazon.com/ko/solutions/case-studies/akplaza/)
-  
-@@@
-
-인터넷 쇼핑몰과 백화점을 운영하는 업체이다 (AK 플라자)
-
-1. 오라클은 on-Prem 에 있고 DW 는 테라데이터로 되어 있다.
-2. DW 동기화는 ogg ?
-3. on-prem 에 있는 테라데이터를 redshift 로 전환한다.
-4. 어플리케이셔은 AWS 에 DB 는 on-prem 에 있다 (DX 연결)
-5. 오라클과 redshift 는 DMS 로 동기화한다.
-6. 테라데이터는 ftp 서버에 있는 파일을 teql 를 이용하여 upload 했다 --> s3 이벤트 구조 필요. 
-7. staging layer / dw layer / presentation layer 간의 ETL 은 procedure 로 작성한다 (glue 를 쓰지않음)
-
-- tech condiseration
-  데이터 용량은 ?   
-  레드쉬프트 몇개의 노드로 할 것인가? 어떤 타입    
-  dist key / sort key 는 어떻게 할것인가?
-  BI 툴은 무엇인가?  
-  테이블은 몇개이고, 제일 복잡한 업무는
-  start schema 를 사용중인가 ?
-  등등.  
-@@@
-
-### AS-IS ###
-아래의 고객 환경에 맞는 최적의 마이그레이션 방안이 필요함
-- 메인 DW DB: Teradata 12.0
-- ETL : [Informatica Powercenter](https://www.javatpoint.com/informatica-powercenter)
-- BI : Hyperion (버전 정보 확인 필요)
-- 데이터 사이즈: 약 2 TB
-
-![](https://github.com/gnosia93/alibaba-interview/blob/main/images/tera-to-redshift-1.png)
-
-- The supported version of Informatica PowerCenter for Amazon Redshift is PowerExchange for Amazon Redshift 10.2 (released in 2017) or late
-- [Installing and Configuring PowerCenter 10.2 in the AWS Cloud](https://docs.informatica.com/data-integration/powercenter/h2l/1318-installing-and-configuring-powercenter-10-2-in-the-aws-clou/installing-and-configuring-powercenter-10-2-in-the-aws-cloud.html)
-
-
-
-### TO-BE ###
-![](https://github.com/gnosia93/alibaba-interview/blob/main/images/teradata-mig.png)
-
-* 테라데이터 isolation level 을 알아봐야 한다.
-* 작업을 시작하기 전에 테라데이터의 ETL 을 중지한다.
-* 트랜잭션 테이블(fact) 테이블의 데이터 변경은 최대 1달전까지 발생할 수 있다. 마스터(Dimension) 은 수시로 발생.
-   - 큰 Fact 테이블에 대해서는 TPT 를 이용하여 병렬로 S3 로 로딩한 후, 레드쉬프트의 load 커맨드를 이용하여 적재한다 
-* https://teradataexample.blogspot.com/2016/03/tpt-export-script-how-to-use-tpt-export.html
-* [TPT to S3](https://github.com/dro248/easy_tpt)
-
-
-* [Migration 고려사항 - Teradata Migration to Amazon Redshift](https://prisoft.com/teradata-migration-to-amazon-redshift/)
-
-@@@
-POC 체크 사항   
-  1. 데이터 마이그레이션 방법론 (데이터 타입 변환)   
-  2. 코드 변환 방법  (프로시저와 SQL)
-  3. 테이블 설계 (DistKey / SortKey) 및 데이터 분산 방법 설계
-  4. SQL 성능 측정.
-  5. 실시간 데이터 분석 기능.  
-@@@
-
-
-
 ### 1. 데이터 마이그레이션 ###
+
 * 데이터마이그레이션은 SCT 의 데이터 데이터 에이전트를 활용한다. 데이타의 타입중 변경이 안되는 데이터 부터 먼저 옮겨놓는다. (마스터) 트랜잭셩성 fact 의 경우 대부분이 이력에 해당하므로 수정 보다는 입력이 주류이다..
 * 마스터 데이터, 트랜잭션 데이터를 구분해서 update, delete, insert 에 대비한다. 
 https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html#agents.Installing.AgentSettings
