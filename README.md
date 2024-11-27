@@ -17,8 +17,6 @@ Tasks are consist of folllowing two categories.
 Descriptive analytics: A traditional business intelligence method that uses visualizations like pie charts, bar charts, tables, or line graphs. It's the foundation for other types of analytics. For example, you can use descriptive analytics to determine how many sales occurred in a quarter and if they increased or decreased. 
 Predictive analytics: Uses historical data to predict likely outcomes and make educated forecasts. It's a more complex type of analytics that uses probabilities instead of simply interpreting existing facts. 
 
-
-
 ### Proposal ###
 proposed Redshift based DW with following advantage   
 
