@@ -66,7 +66,7 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 
 
 @@@ product_dim @@@
-
+* https://www.tutorials24x7.com/mysql/guide-to-design-database-for-shopping-cart-in-mysql 
 
 ```
 A typical "sales fact" record in a data warehouse, depending on the level of detail captured,
