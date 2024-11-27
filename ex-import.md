@@ -209,7 +209,10 @@ SORTKEY(sales_key);
 ```
 * copy
 ```
-COPY sales_fact FROM 's3://gnosia93-s3-tera-to-redshift/sales_fact_old.csv' CSV IGNOREHEADER 1 NOLOAD
+COPY sales_fact 
+FROM 's3://gnosia93-s3-tera-to-redshift/sales_fact_old.csv' 
+IAM_ROLE 'arn:aws:iam::000000000000:role/service-role/AmazonRedshift-CommandsAccessRole-20241127T183927'
+CSV IGNOREHEADER 1 NOLOAD
 ```
 
 
