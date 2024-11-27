@@ -1,6 +1,9 @@
 
 ### export from DB ###
 
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/sales_fact.png)
+
+avg_row_length = 480bytes
 
 
 ```
