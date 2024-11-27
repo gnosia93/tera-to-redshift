@@ -73,15 +73,15 @@ In case of dimension, Both Insert and Update is happened.
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
 
 - tuple size : 1800 bytes. 
-- Total record count : 4000 만건 (16.76 gb * 4EA = 67.04 gb)
+- Total record count : 40M records (16.76 gb * 4EA = 67.04 gb)
   - 750 만건 시간측정 로딩 시간 측정(parallel degree 4, sell_yn = N) : 판매중지
   - 250 만건 시간측정 로딩 시간 측정(parallel degree 4, sell_yn = Y) : 현재판매중
    
-- estimated loading time.
-  - export time : 20 sec
-  - s3 upload time : 10 sec
-  - redshift copy time : 14 sec
-  - total elapsed time : 44 sec
+- estimated loading time (10M records)
+  - export time : 176 sec
+  - s3 upload time : 72 sec
+  - redshift copy time : ?? sec
+  - total elapsed time : ?? sec
 
 
 
