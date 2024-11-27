@@ -140,7 +140,7 @@ the number of attributes stored within each record.
 
 * POC was conducted for 2 months colloborting with customer.
 * Optimal migration strategy was developed with architecture, tools and expected DW downtime.
-* For ETL, due to learning curve and lack of GUI interface of AWS Glue, the customer maintains informatica.
+* For ETL, due to steep learning curve and lack of GUI interface of AWS Glue, the customer maintains informatica.
 
 
 ## Revision History ##
