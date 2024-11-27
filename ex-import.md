@@ -1,7 +1,13 @@
 ### 테이블 생성 ###
 ```
+CREATE TABLE product_dim (
 
-'CREATE TABLE `sales_fact` (
+
+  regdate datetime DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+
+CREATE TABLE `sales_fact` (
   `sales_key` bigint NOT NULL AUTO_INCREMENT,
   `id1` bigint NOT NULL,
   `id2` bigint NOT NULL,
@@ -15,9 +21,8 @@
   `dummy1` varchar(200) NOT NULL,
   `dummy2` varchar(200) NOT NULL,
   PRIMARY KEY (`sales_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci'
+) ENGINE=InnoDB;
 ```
-
 
 ### Generate dummy sales_fact table ###
 100 만건을 생성한다.
