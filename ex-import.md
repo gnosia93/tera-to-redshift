@@ -145,6 +145,7 @@ drwxr-x---+ 124 soonbeom  staff       3968 11 27 16:29 ..
 
 ### Upload to S3 ###
 
+버킷생성
 ```
 aws s3api create-bucket \
     --bucket gnosia93-s3-tera-to-redshift \
@@ -152,4 +153,10 @@ aws s3api create-bucket \
     --create-bucket-configuration LocationConstraint=ap-northeast-2
 ```
 
-
+파일업로드 시간측정 
+```
+% start_time=$(date +%s);\
+aws s3 cp sales_fact_old.csv s3://gnosia93-s3-tera-to-redshift; \
+elapsed=$(( end_time - start_time )); \
+echo $elapsed
+```
