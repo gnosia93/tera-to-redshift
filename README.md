@@ -53,8 +53,6 @@ To develope migration strategy, picked sales fact table which has a large amount
 
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
-- ~~columns : 30 개~~
-- ~~datatype : small int / int / big int / char / varchar, numeric(decimal)~~ 
 - tuple size : 480 bytes (16 byte * 30개 = 480 bytes) 
 - avg insert : 82 만건 (daily 375 MB)
   - 10.99 gb / month, 131.96 gb / year ---> 659.82 gb / 5 years 
@@ -71,12 +69,6 @@ on the specific data fields included and the system used.
 however, this can fluctuate significantly based on the complexity of the sales data and
 the number of attributes stored within each record. 
 ```
-
-
-@@@ Sales TX Sizeing @@@
-- 1일 판매건수 : 273,972 개 (분당점, 수원점)
-- 1일 판매건수 (9개점 + 온라인) : 821,917 개 
-
 
 
 ### Migration Architecture & ETL ###
@@ -152,8 +144,6 @@ the number of attributes stored within each record.
 
 ## 참고자료 ##
 
-* [DW Appliance 사례연구 - 애경그룹](https://m.blog.naver.com/iskrahee/70130255093) 
-* [Data-Warehouse-Case-Study](https://github.com/al-ghaly/Data-Warehouse-Case-Study?tab=readme-ov-file)
 * [Datatype Conversion - Accelerate your data warehouse migration to Amazon Redshift – Part 2](https://noise.getoto.net/2021/07/22/accelerate-your-data-warehouse-migration-to-amazon-redshift-part-2/)
 * [DMS with VPN](https://dev.to/haintkit/case-study-how-to-replicate-database-from-aws-to-outside-3obc)
 * TPT   
