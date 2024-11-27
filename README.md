@@ -66,7 +66,7 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 
 
 @@@ [product_dim](https://www.tutorials24x7.com/mysql/guide-to-design-database-for-shopping-cart-in-mysql) @@@
-[](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
 
 
 ```
