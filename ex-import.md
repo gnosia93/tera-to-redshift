@@ -157,6 +157,7 @@ aws s3api create-bucket \
 ```
 % start_time=$(date +%s);\
 aws s3 cp sales_fact_old.csv s3://gnosia93-s3-tera-to-redshift; \
+end_time=$(date +%s); \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
