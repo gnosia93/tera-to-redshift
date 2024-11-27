@@ -155,6 +155,7 @@ Elapsed time for import DB: 4014.8458869457245 seconds (66 minutes)
 
 
 ### 3. check table size ###
+* table size
 ```
 SELECT table_name,
        ROUND((data_length+index_length)/1024/1024, 1) AS 'Size(MB)'
@@ -162,6 +163,15 @@ FROM information_schema.tables
 where table_name = 'product_dim';
 ```
 25.8 GB / 10,000,000 row count
+
+* average row length
+```
+select data_length / 10000000
+from information_schema.tables 
+where table_schema = 'dw'
+and table_name = 'product_dim';
+```
+2,773 bytes 
 
 
 ### 4. export to csv file ###
