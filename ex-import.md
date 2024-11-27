@@ -20,6 +20,7 @@ CREATE TABLE product_dim (
   dummy7 varchar(200) NOT NULL,
   dummy8 varchar(200) NOT NULL,
   dummy9 varchar(200) NOT NULL,
+  sell_yn char(1) NOT NULL,
   regdate datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
