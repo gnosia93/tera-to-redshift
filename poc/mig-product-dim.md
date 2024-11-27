@@ -165,7 +165,6 @@ where table_name = 'product_dim';
 
 
 ### 4. export to csv file ###
-
 ```
 start_time=$(date +%s);\
 mysql -u test -h ec2-43-200-2-190.ap-northeast-2.compute.amazonaws.com -p \
@@ -177,3 +176,12 @@ echo $elapsed
 176 sec (around 3 minutes) / 4,868,889,981 bytes (4.53 GB)
 
 
+### 5. update to S ###
+```
+start_time=$(date +%s);\
+aws s3 cp product-dim.csv s3://gnosia93-s3-tera-to-redshift; \
+end_time=$(date +%s); \
+elapsed=$(( end_time - start_time )); \
+echo $elapsed
+```
+Completed 983.0 MiB/4.5 GiB (65.2 MiB/s) with 1 file(s) remaining
