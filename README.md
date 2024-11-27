@@ -143,5 +143,7 @@ the number of attributes stored within each record.
 * For ETL, due to learning curve and lack of GUI interface of AWS Glue, the customer maintains informatica.
 
 
+## Revision History ##
+2024.11.04 draft released
 
 
