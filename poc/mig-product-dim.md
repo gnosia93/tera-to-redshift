@@ -184,4 +184,6 @@ end_time=$(date +%s); \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
-Completed 983.0 MiB/4.5 GiB (65.2 MiB/s) with 1 file(s) remaining
+Completed 983.0 MiB/4.5 GiB (65.2 MiB/s) with 1 file(s) remaining   
+72 sec 
+
