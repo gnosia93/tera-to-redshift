@@ -161,7 +161,7 @@ SELECT table_name,
 FROM information_schema.tables
 where table_name = 'product_dim';
 ```
-25.8 GB
+25.8 GB / 10,000,000 row count
 
 
 ### 4. export to csv file ###
