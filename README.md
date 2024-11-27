@@ -1,5 +1,5 @@
 # tera-to-redshift
-This document describe customer's DW migration case from teradata to amazon redshift. 
+This document describe DW migration case from teradata to amazon redshift. 
 POC scope is consist of folllowing two tasks.
 
 - Task 1 - Redshift Migration
