@@ -1,5 +1,19 @@
 
 ### export from DB ###
+
+```
+select count(1) from dw.sales_fact;
+```
+레코드 건수 - 100만건
+
+```
+SELECT table_name,
+       ROUND((data_length+index_length)/1024/1024, 1) AS 'Size(MB)'
+FROM information_schema.tables
+where table_name = 'sales_fact';
+```
+DB 테이블 사이즈 - 622 MB 
+
 ```
 % start_time=$(date +%s);\
 mysql -u test -h ec2-43-200-2-190.ap-northeast-2.compute.amazonaws.com -p \
