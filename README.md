@@ -1,7 +1,7 @@
 # tera-to-redshift
 
 This document describe DW migration from teradata to amazon redshift. 
-Tasks are consist of folllowing two category.
+Tasks are consist of folllowing two categories.
 
 - _Develope Redshift Migration Strategy_
 - _Modernize ETL with AWS Glue_ 
