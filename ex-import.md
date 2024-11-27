@@ -38,7 +38,7 @@ drwxr-x---+ 124 soonbeom  staff       3968 11 27 16:29 ..
 ```
 파일 사이즈 - 454.79 MB
 
-* 아래는 CSV 파일 내용
+아래는 CSV 파일 내용
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/sales_fact_samples.png)
 
 
