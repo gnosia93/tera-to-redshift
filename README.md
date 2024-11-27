@@ -149,9 +149,7 @@ the number of attributes stored within each record.
   Query/Load performance data – Performance data helps you monitor database activity and performance. This data is aggregated in the Amazon Redshift console to help you easily correlate what you see in CloudWatch metrics with specific database query and load events. You can also create your own custom performance queries and run them directly on the database. Query and load performance data is displayed only in the Amazon Redshift console. It is not published as CloudWatch metrics.
 
 ##### 3-2. Performance Tuning #####
-- Matetiralized View
-- DistKey / SortKey -> Auto
-- 분산키 설계(DistKey Design)
+* https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-techniques-for-amazon-redshift/
 
 
 
