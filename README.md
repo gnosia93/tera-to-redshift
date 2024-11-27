@@ -155,7 +155,10 @@ the number of attributes stored within each record.
 
 
 #### Item #4 - Provide Cloud ETL with Serverless Architecture ####
-
+- Provided DMS Configuration (parquet parrtitoning)
+- Glue ETL Sample Code
+- Job Sechduling with Glue
+  
 
 ## Conclusion ##
 
