@@ -138,9 +138,8 @@ the number of attributes stored within each record.
 ## Conclusion ##
 
 * POC was conducted for 2 months colloborting with customer.
-* Provided optimal migration strategy with architecture, tools and expected DW downtime.
-* After POC, the customer successfully migrated their DW to Amazon Redshift.
-* For ETL, due to learning curve of AWS glue, the customer stayed in informatica.
+* Optimal migration strategy was developed with architecture, tools and expected DW downtime.
+* For ETL, due to learning curve and lack of GUI interface of AWS Glue, the customer maintains informatica.
 
 
 
