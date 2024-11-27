@@ -51,7 +51,7 @@ _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers
 
 @@@ sales_fact @@@  
 To develope migration strategy, picked sales fact table which has a large amount of data volume.   
-Below mutli dimension diagram is fake and just showne in order to improve your understandings.
+_Below mutli dimension diagram is not real one and just showne in order to improve your understandings._
 
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
