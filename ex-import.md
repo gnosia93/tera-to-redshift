@@ -1,6 +1,8 @@
 
 ### export from DB ###
 
+
+
 ```
 select count(1) from dw.sales_fact;
 ```
