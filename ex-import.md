@@ -2,7 +2,7 @@
 
 상품 테이블의 경우 총 4천만건으로 가정, AMP 가 4이기 때문에 AMP 당 1천만건이 저장됨.
 sell_yn 이 Y 인 상품에 대해서 일배치로 상품에 대한 update 수행.
-총 4천만건중 현재 판매중인 상품의 비율은 60% 로 가정.
+총 4천만건중 현재 판매중인 상품의 비율(sell_yn 값이 Y)은 25% 로 가정.
 ```
 CREATE TABLE product_dim (
   product_key bigint NOT NULL AUTO_INCREMENT,
