@@ -174,6 +174,6 @@ end_time=$(date +%s); \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
-
+176 sec (around 3 minutes) / 4,868,889,981 bytes (4.53 GB)
 
 
