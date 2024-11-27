@@ -65,8 +65,9 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 - estimated loading time for 5 years : 30.41 Hours
 
 
-@@@ product_dim @@@
-* https://www.tutorials24x7.com/mysql/guide-to-design-database-for-shopping-cart-in-mysql 
+@@@ [product_dim](https://www.tutorials24x7.com/mysql/guide-to-design-database-for-shopping-cart-in-mysql) @@@
+[](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
+
 
 ```
 A typical "sales fact" record in a data warehouse, depending on the level of detail captured,
