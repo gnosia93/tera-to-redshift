@@ -1,6 +1,5 @@
 
-## export from DB ##
-
+### export from DB ###
 ```
 % start_time=$(date +%s);\
 mysql -u test -h ec2-43-200-2-190.ap-northeast-2.compute.amazonaws.com -p \
@@ -20,3 +19,6 @@ drwxr-x---+ 124 soonbeom  staff       3968 11 27 16:29 ..
 -rw-r--r--    1 soonbeom  staff  476889980 11 27 16:38 sales_fact.csv
 ```
 파일 사이즈 - 454.79 MB
+
+
+### Upload to S3 ###
