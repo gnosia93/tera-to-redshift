@@ -144,3 +144,12 @@ drwxr-x---+ 124 soonbeom  staff       3968 11 27 16:29 ..
 
 
 ### Upload to S3 ###
+
+```
+aws s3api create-bucket \
+    --bucket gnosia93-s3-tera-to-redshift \
+    --region ap-northeast-2 \
+    --create-bucket-configuration LocationConstraint=ap-northeast-2
+```
+
+
