@@ -143,6 +143,10 @@ the number of attributes stored within each record.
 * For ETL, due to steep learning curve and lack of GUI interface of AWS Glue, the customer maintains informatica.
 
 
+## 레퍼런스 ##
+
+* [Coupang Daily Sales](https://kr.investing.com/pro/NYSE:CPNG/explorer/volume_avg_3m)
+
 ## Revision History ##
 _2024.11.04 draft released_
 
