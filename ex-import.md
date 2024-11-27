@@ -160,3 +160,13 @@ aws s3 cp sales_fact_old.csv s3://gnosia93-s3-tera-to-redshift; \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
+
+```
+(base) soonbeom@bcd07468d10a tera-dw % date
+2024년 11월 27일 수요일 18시 28분 43초 KST
+(base) soonbeom@bcd07468d10a tera-dw % aws s3 cp sales_fact_old.csv s3://gnosia93-s3-tera-to-redshift
+upload: ./sales_fact_old.csv to s3://gnosia93-s3-tera-to-redshift/sales_fact_old.csv
+(base) soonbeom@bcd07468d10a tera-dw % date
+2024년 11월 27일 수요일 18시 28분 54초 KST
+```
+로딩시간 11 초 걸림
