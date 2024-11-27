@@ -56,7 +56,7 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 - tuple size : 480 bytes (16 byte * 30개 = 480 bytes) 
 - avg insert : 82 만건 (daily 375 MB)
   - 10.99 gb / month, 131.96 gb / year ---> 659.82 gb / 5 years 
-- estimated loading time for daily data. 
+- estimated migration time for daily insert. 
   - export time : 20 sec
   - s3 upload time : 10 sec
   - redshift copy time : 14 sec
@@ -74,10 +74,9 @@ In case of dimension, Both Insert and Update is happened.
 
 - tuple size : 1800 bytes. 
 - Total record count : 40M records (16.76 gb * 4EA = 67.04 gb)
-  - 750 만건 시간측정 로딩 시간 측정(parallel degree 4, sell_yn = N) : 판매중지
-  - 250 만건 시간측정 로딩 시간 측정(parallel degree 4, sell_yn = Y) : 현재판매중
+- AMP number : 4
    
-- estimated loading time (10M records)
+- estimated migration time for each AMP (10M records)
   - export time : 176 sec
   - s3 upload time : 72 sec
   - redshift copy time : ?? sec
