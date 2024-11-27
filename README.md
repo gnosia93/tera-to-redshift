@@ -62,6 +62,8 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
   - redshiftcopy time : 14 sec
   - total elapsed time : 44 sec
 
+@@@ member_dim @@@
+
 
 ```
 A typical "sales fact" record in a data warehouse, depending on the level of detail captured,
