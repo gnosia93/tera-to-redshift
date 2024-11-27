@@ -73,7 +73,10 @@ In case of dimension, Both Insert and Update is happened.
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
 
 - tuple size : 1800 bytes. 
-- Total record count : 1000 만건 (16.76 gb) 
+- Total record count : 1000 만건 (16.76 gb)
+  - 1000 만건 시간측정
+  - 250 만건 시간측정
+   
 - estimated loading time.
   - export time : 20 sec
   - s3 upload time : 10 sec
