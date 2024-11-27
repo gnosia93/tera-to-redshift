@@ -65,7 +65,7 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 - estimated loading time for 5 years : 30.41 Hours
 
 
-@@@ member_dim @@@
+@@@ product_dim @@@
 
 
 ```
