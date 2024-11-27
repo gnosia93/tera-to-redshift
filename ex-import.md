@@ -141,8 +141,6 @@ drwxr-x---+ 124 soonbeom  staff       3968 11 27 16:29 ..
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/sales_fact_samples.png)
 
 
-
-
 ### Upload to S3 ###
 
 버킷생성
@@ -161,4 +159,7 @@ end_time=$(date +%s); \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
+
+### Import to Redshift ###
+
 
