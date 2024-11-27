@@ -36,7 +36,7 @@ Check the feasiblity of redshift migration and provide optimal migration strateg
 - Item #1 - Data Type and SQL Conversion _(with minial manual efforts)._
 - Item #2 - Find optimal data migration architecture _(to minimize DW downtime)._
 - Item #3 - Provide Monitoring and Performance Tuning Practice for Post Migration.
-- Item #4 - Serverless ETL sample to upgrade ETL architecture _(for SCD)_.   
+- Item #4 - Modernized ETL with Serverless Architecture _(for SCD)_.   
 
 _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers to a dimension table that stores data which changes gradually over time, allowing you to track historical changes in attributes like customer addresses or product details while maintaining accurate reporting across different time periods_
   
@@ -110,13 +110,13 @@ the number of attributes stored within each record.
 - Redshift didn't support ROLLUP and CUBE --> implemented with CTE.
 - 대소문자 이슈
 
-#### Task #2 - Find & Provide optimal data migration methodology ####
+#### Task #2 - Find optimal data migration architecture  ####
 - Considering network bandwith.
 - Minimize ETL downtime. 
 - provide data migration integrity.
 
 
-#### Task #3 - Providing Monitoring and Performance Tuning Practice. ####
+#### Task #3 - Provide Monitoring and Performance Tuning Practice for Post Migration ####
 
 ##### 3-1. Performnace Monitoring #####
  
@@ -133,7 +133,7 @@ the number of attributes stored within each record.
 
 
 
-#### Item #4 - Serverless ETL sample to upgrade ETL architecture ####
+#### Item #4 - Modernized ETL with Serverless Architecture  ####
 
 
 ## Conclusion ##
