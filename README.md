@@ -59,7 +59,7 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 - estimated loading time for daily data. 
   - export time : 20 sec
   - s3 upload time : 10 sec
-  - redshift copy time : 14 sec
+  - redshiftcopy time : 14 sec
   - total elapsed time : 44 sec
 
 
