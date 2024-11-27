@@ -58,10 +58,11 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 - tuple size : 480 bytes (16 byte * 30개 = 480 bytes) 
 - avg insert : 82 만건 (daily 375 MB)
   - 10.99 gb / month, 131.96 gb / year ---> 659.82 gb / 5 years 
-- estimated migration time for daily data. 
-  - export time : xx sec
-  - s3 upload time : xx sec
-  - redshift import time : xx sec
+- estimated loading time for daily data. 
+  - export time : 20 sec
+  - s3 upload time : 10 sec
+  - redshift copy time : 14 sec
+  - total elapsed time : 44 sec
 
 
 ```
