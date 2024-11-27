@@ -5,7 +5,6 @@
 
 avg_row_length = 480bytes
 
-
 ```
 select count(1) from dw.sales_fact;
 ```
@@ -38,6 +37,11 @@ drwxr-x---+ 124 soonbeom  staff       3968 11 27 16:29 ..
 -rw-r--r--    1 soonbeom  staff  476889980 11 27 16:38 sales_fact.csv
 ```
 파일 사이즈 - 454.79 MB
+
+* 아래는 CSV 파일 내용
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/sales_fact_samples.png)
+
+
 
 
 ### Upload to S3 ###
