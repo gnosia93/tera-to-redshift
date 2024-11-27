@@ -184,3 +184,25 @@ echo $elapsed
 ### Import to Redshift ###
 * ra3.large (2node)
 
+```
+CREATE TABLE `sales_fact` (
+  `sales_key` bigint NOT NULL,
+  `id1` bigint NOT NULL,
+  `id2` bigint NOT NULL,
+  `id3` bigint NOT NULL,
+  `id4` bigint NOT NULL,
+  `id5` bigint NOT NULL,
+  `id6` bigint NOT NULL,
+  `id7` bigint NOT NULL,
+  `id8` bigint NOT NULL,
+  `id9` bigint NOT NULL,
+  `dummy1` varchar(200) NOT NULL,
+  `dummy2` varchar(200) NOT NULL,
+  PRIMARY KEY (`sales_key`),
+  DISKEY(sales_key),
+  SORTKEY(sales_key)
+) 
+```
+
+
+
