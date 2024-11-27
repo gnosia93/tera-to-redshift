@@ -68,7 +68,18 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 @@@ product_dim @@@  
 _https://www.tutorials24x7.com/mysql/guide-to-design-database-for-shopping-cart-in-mysql_     
 Among Dimensions, product table is the largest one. we will use this table to calulate dimension table's migration time. 
+In case of dimension, Both Insert and Update is happened.
+
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
+
+- tuple size : 1800 bytes. 
+- Total record count : 1000 만건 (16.76 gb) 
+- estimated loading time.
+  - export time : 20 sec
+  - s3 upload time : 10 sec
+  - redshift copy time : 14 sec
+  - total elapsed time : 44 sec
+
 
 
 ```
