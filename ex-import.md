@@ -1,3 +1,24 @@
+### 테이블 생성 ###
+```
+
+'CREATE TABLE `sales_fact` (
+  `sales_key` bigint NOT NULL AUTO_INCREMENT,
+  `id1` bigint NOT NULL,
+  `id2` bigint NOT NULL,
+  `id3` bigint NOT NULL,
+  `id4` bigint NOT NULL,
+  `id5` bigint NOT NULL,
+  `id6` bigint NOT NULL,
+  `id7` bigint NOT NULL,
+  `id8` bigint NOT NULL,
+  `id9` bigint NOT NULL,
+  `dummy1` varchar(200) NOT NULL,
+  `dummy2` varchar(200) NOT NULL,
+  PRIMARY KEY (`sales_key`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci'
+```
+
+
 ### Generate dummy sales_fact table ###
 100 만건을 생성한다.
 ```
