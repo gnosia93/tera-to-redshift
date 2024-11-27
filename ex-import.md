@@ -207,6 +207,10 @@ CREATE TABLE sales_fact (
 DISTKEY(sales_key) 
 SORTKEY(sales_key);
 ```
+* copy
+```
+COPY sales_fact FROM 's3://gnosia93-s3-tera-to-redshift/sales_fact_old.csv' CSV IGNOREHEADER 1 NOLOAD
+```
 
 
 
