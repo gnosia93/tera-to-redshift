@@ -12,17 +12,13 @@ password = 'test'
 db = 'dw'
 charset = 'utf8'
 
-
 config = {'host':host, 'user':user, 'password':password, 'database':db, 'charset':charset}
 conn_pool = pymysqlpool.ConnectionPool(size = 100, maxsize = 200, name = 'db_pool', **config)
-
-
 
 def db_trunc(conn):
     sql = 'truncate dw.sales_fact'
     cursor = conn.cursor()
     cursor.execute(sql)
-
 
 def db_export(conn):
     sql = 'select count(1) from dw.sales_fact'
@@ -32,7 +28,6 @@ def db_export(conn):
     rs = cursor.fetchall()
     for tuple in rs:
         print(tuple)
-
 
 def db_import(conn_pool, tuple_cnt):
     conn = conn_pool.get_connection()
@@ -62,14 +57,12 @@ def db_import(conn_pool, tuple_cnt):
             
     conn.close()
 
-
 import_cnt = 1000000
 
 # truncate table
 conn = conn_pool.get_connection()
 db_trunc(conn)
 conn.close()
-
 
 # import table
 thread_pool = []
@@ -82,7 +75,6 @@ for i in range(100):
     thread_pool.append(t)
     print(i, ' thread ', t.name, ' started...' )
 
-
 # print(thread_pool)
 for t in thread_pool:
     print(t.name, ' joined...')
@@ -93,14 +85,10 @@ elapsed_time = end_time - start_time
 
 print(f"Elapsed time for import DB: {elapsed_time} seconds")
 
-
 # export table
 conn = conn_pool.get_connection()
 # db_export(conn)
 conn.close()
-
-
-
 
 """
 https://stackoverflow.com/questions/71564954/pymysql-error-packet-sequence-number-wrong-got-1-expected-0    
