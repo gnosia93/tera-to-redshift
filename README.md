@@ -42,7 +42,7 @@ _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers
 #### Source Volumes & Chracteristics ####
 
 - 2TB storage volumns with about 70 tables.
-- The numbers of AMPs is unknown.
+- The numbers of AMPs is 4.
 - dimension table has insert and update.
 - fact table only has insert.
 - a bunch of summary table exists (only insert) : daily, monthly.
