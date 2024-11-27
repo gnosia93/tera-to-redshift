@@ -10,7 +10,7 @@ POC scope is consist of folllowing two tasks.
 ### Customer Context ###
 
 - Built EDW on top of Teradata appliance at onpremise.
-- Data is ingested using ETL from department store(9) and online mall.
+- Data is ingested using ETL from department stores and online mall.
 - Analyze their customer and marketing data and wanted to reduce TCO.
 - Considering Predictive analytics in addtion to Descriptive analytics(BI).
 
