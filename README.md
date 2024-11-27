@@ -2,8 +2,8 @@
 This document describe DW migration case from teradata to amazon redshift. 
 POC scope is consist of folllowing two tasks.
 
-- Task 1 - Redshift Migration
-- Task 2 - ETL with AWS Glue 
+- Task 1 - __Develope Redshift Migration Strategy__
+- Task 2 - __Modernize ETL with AWS Glue__ 
 
 
 ### Customer Context ###
