@@ -125,8 +125,9 @@ the number of attributes stored within each record.
 
 #### Task #1 - [Data Type and SQL Conversion](https://docs.informatica.com/integration-cloud/data-ingestion-and-replication/current-version/database-ingestion-and-replication/database-ingestion-and-replication/default-data-type-mappings/teradata-source-and-amazon-redshift-target.html) ####
 
-- No conversion problems such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
+- No conversion issue such as bigint, byteint, integer, number(p,s), char, varchar(n), date, time, timestamp.
 - For INTERVAL data type, SCT supports conversion.
+- There are no datatype such as peroid, XML, LOBS etc.
 - There are no procedures & macros.
 - Redshift didn't support ROLLUP and CUBE --> implemented with CTE.
 - 대소문자 이슈
