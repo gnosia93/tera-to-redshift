@@ -133,7 +133,7 @@ the number of attributes stored within each record.
 - 대소문자 이슈
 
 #### Task #2 - Find optimal data migration architecture  ####
-- Considering network bandwith (2 Gbps Internet Backbone) 
+- Considering network bandwith (10 Gbps Internet Backbone) 
 - Minimize ETL downtime. 
 - provide data migration integrity.
 
