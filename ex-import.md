@@ -212,8 +212,9 @@ SORTKEY(sales_key);
 COPY sales_fact 
 FROM 's3://gnosia93-s3-tera-to-redshift/sales_fact_old.csv' 
 IAM_ROLE 'arn:aws:iam::000000000000:role/service-role/AmazonRedshift-CommandsAccessRole-20241127T183927'
-CSV IGNOREHEADER 1 NOLOAD
+CSV IGNOREHEADER 1
 ```
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/redshift_copy.png)
 
 
 
