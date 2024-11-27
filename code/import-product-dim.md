@@ -1,3 +1,5 @@
+### generate dummy data ###
+
 ```
 import pymysql
 import pymysqlpool
@@ -119,6 +121,25 @@ print(f"Elapsed time for import DB: {elapsed_time} seconds")
 conn = conn_pool.get_connection()
 # db_export(conn)
 conn.close()
+```
+
+### check table size ###
+```
+SELECT table_name,
+       ROUND((data_length+index_length)/1024/1024, 1) AS 'Size(MB)'
+FROM information_schema.tables
+where table_name = 'product_dim';
+```
+
+### export to csv file ###
+
+```
+start_time=$(date +%s);\
+mysql -u test -h ec2-43-200-2-190.ap-northeast-2.compute.amazonaws.com -p \
+-e "SELECT * FROM dw.sales_fact" | sed 's/\t/","/g;s/^/"/;s/$/"/;' > product-dim.csv; \
+end_time=$(date +%s); \
+elapsed=$(( end_time - start_time )); \
+echo $elapsed
 ```
 
 
