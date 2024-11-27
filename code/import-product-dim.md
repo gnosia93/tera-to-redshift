@@ -61,7 +61,7 @@ def db_import(conn_pool, tuple_cnt, commit_interval):
              'Y',
              CURRENT_TIMESTAMP
         )'''
-        
+                
         cursor.execute(sql, 
             (0, i, i, i, i, i, i, i, i, i, 
                 'dummy1_' + str(i), 
@@ -75,6 +75,7 @@ def db_import(conn_pool, tuple_cnt, commit_interval):
                 'dummy9_' + str(i))
         )
         if i % commit_interval == 0 or i == tuple_cnt - 1:
+            print(threading.get_native_id(), ' commit ', i)
             conn.commit()
             
     conn.close()
