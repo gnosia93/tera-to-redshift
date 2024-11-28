@@ -97,7 +97,7 @@ the number of attributes stored within each record.
 - Avaialbe Network Bandwith - 560Mbps (70MB/s)
 - Snowball is not adequate for this case, usaully takes more than 1 weeks for delivery between IDC and AWS, Upload data into snowball and S3 upload 
 - Migration Strategy based on test. 
-  - fact tables (Insert Only) - daily incremental migration is preferred.
+  - fact tables (Insert Only) - daily incremental migration is preferred, after initial bulk loading
   - dimension table (Insert / Update) - migrate at once while ETL stops.
   - Summary (Insert Only, But record count is small) - migrate at once while ETL stops 
 - Export with TPT which supports parallel processing  
