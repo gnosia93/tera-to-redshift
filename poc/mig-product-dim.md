@@ -223,7 +223,7 @@ end_time=$(date +%s); \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
-178 sec (around 3 minutes) / 4,868,889,981 bytes (4.53 GB)
+714 sec (around 12 minutes) / 20,261,627,575 bytes (18.87 GB)
 
 
 ### 5. update to S3 ###
