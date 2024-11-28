@@ -100,8 +100,7 @@ the number of attributes stored within each record.
   - fact tables (Insert Only) - daily incremental migration is preferred.
   - dimension table (Insert / Update) - migrate at once while ETL stops.
   - Summary (Insert Only, But record count is small) - migrate at once while ETL stops 
-  
-- 처음에는 sct 에이전트를 사용하였으나, 테스트시 hang 이슈가 발생하여 --> tpt 로 교체함.
+- Export with TPT which supports parallel processing  
 
  
 ### Risk & Challenge ###
