@@ -104,16 +104,10 @@ the number of attributes stored within each record.
 - Migration Data Consistency - Table row count and the summation of 'Measure' column.
 
  
-### Risk & Challenge ###
+### Issues & Challenge ###
 
-- migration time. -- reduce...해야함..
-- sct data agent problems.
-  - at first, I used sct ata agent, later on replace sct agent with tpt. 
-- SQL compatiblity
-  - [rollup / cube](https://www.cloudthat.com/resources/blog/aws-reinvent-2022-new-sql-functionalities-in-amazon-redshift)
-  - redshift doesn't support rollup / cube --> implement with cte.
-
-
+- sct data agent hang for large volumn of table.
+- rollup / cube doesn't support 
 
 
 ## POC Detail ##
