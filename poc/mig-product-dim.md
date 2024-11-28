@@ -226,7 +226,7 @@ echo $elapsed
 176 sec (around 3 minutes) / 4,868,889,981 bytes (4.53 GB)
 
 
-### 5. update to S ###
+### 5. update to S3 ###
 ```
 start_time=$(date +%s);\
 aws s3 cp product-dim.csv s3://gnosia93-s3-tera-to-redshift; \
