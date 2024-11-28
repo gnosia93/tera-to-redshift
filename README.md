@@ -46,13 +46,13 @@ _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers
 - dimension table has insert and update.
 - fact table only has insert.
 - a bunch of summary table exists (only insert) : daily, monthly.
-- sales_fact and product_dim are the largest table in each domain.
+- sales_fact and product_dim are the largest table in each type.
 
 @@@ sales_fact @@@  
 To develope migration strategy, picked sales fact table which has a large amount of data volume.   
 _Below mutli dimensional model is not real diagram and just shown in order to improve your understandings._
 
-![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/fact-design.png)
 
 - Avg Daily Insert : 820K records (tuple size : 624 bytes)
 - Estimated migration time for daily data. 
