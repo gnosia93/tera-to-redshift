@@ -193,3 +193,26 @@ conn.close()
 https://stackoverflow.com/questions/71564954/pymysql-error-packet-sequence-number-wrong-got-1-expected-0    
 """
 ```
+
+### 3. check table size and row length ###
+mysql> SELECT table_name,
+    ->        ROUND((data_length+index_length)/1024/1024, 1) AS 'Size(MB)'
+    -> FROM information_schema.tables
+    -> where table_name = 'product_dim';
++-------------+----------+
+| TABLE_NAME  | Size(MB) |
++-------------+----------+
+| product_dim |  26451.0 |
++-------------+----------+
+1 row in set (0.00 sec)
+
+mysql> select data_length / 10000000
+    -> from information_schema.tables
+    -> where table_schema = 'dw'
+    -> and table_name = 'product_dim';
++------------------------+
+| data_length / 10000000 |
++------------------------+
+|              2773.5884 |
++------------------------+
+1 row in set (0.00 sec)
