@@ -75,6 +75,7 @@ In case of dimension, Both Insert and Update is happened, so we will migrate it 
 - Total record count : 40M records 
 - AMP number : 4
 - Number of CSV file : 4
+- Gizip Compressed : No
 - Estimated migration time per file (10M records, 18.87 GB)
   - export time : 714 sec (around 12 minutes)
   - s3 upload time :  301 sec (acround 5 minutes)
