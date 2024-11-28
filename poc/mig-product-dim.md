@@ -283,7 +283,7 @@ IAM_ROLE 'arn:aws:iam::499514681453:role/service-role/AmazonRedshift-CommandsAcc
 CSV IGNOREHEADER 1
 DELIMITER ',';
 ```
-
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/redshift-product-dim.png)
 
 If there is errors, you can see detail information from stl_load_erros table.
 ```
