@@ -222,7 +222,7 @@ end_time=$(date +%s); \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
-714 sec (around 12 minutes) / 20,261,627,575 bytes (18.87 GB)
+##### 714 sec (around 12 minutes) / 20,261,627,575 bytes (18.87 GB) #####
 
 ```
  % head -n 2 product-dim.csv
