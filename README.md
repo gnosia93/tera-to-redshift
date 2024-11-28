@@ -57,7 +57,7 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 - Avg Daily Insert : 82 만건 (daily 375 MB)
   - 10.99 gb / month, 131.96 gb / year ---> 659.82 gb / 5 years 
 - Estimated migration time for daily data. 
-  - export time : 20 sec
+  - export time : 34 sec
   - s3 upload time : 10 sec
   - redshift copy time : 14 sec
   - total elapsed time : 44 sec
