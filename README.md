@@ -71,8 +71,7 @@ In case of dimension, Both Insert and Update is happened, so we will migrate it 
 
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
 
-- Tuple size : 1800 bytes. 
-- Total record count : 40M records 
+- Total record count : 40M records (tuple size - 1,800 bytes)
 - AMP number : 4
 - Number of CSV file : 4
 - Gizip Compressed : No
