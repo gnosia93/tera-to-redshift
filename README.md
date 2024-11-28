@@ -53,7 +53,7 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
-- tuple size : 480 bytes (16 byte * 30개 = 480 bytes) 
+- tuple size : 624 bytes (16 byte * 30개 = 480 bytes) 
 - avg insert : 82 만건 (daily 375 MB)
   - 10.99 gb / month, 131.96 gb / year ---> 659.82 gb / 5 years 
 - estimated migration time for daily insert. 
