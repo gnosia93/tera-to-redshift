@@ -218,12 +218,12 @@ mysql> select data_length / 10000000
 ```
 start_time=$(date +%s);\
 mysql -u test -h ec2-43-200-2-190.ap-northeast-2.compute.amazonaws.com -p \
--e "SELECT * FROM dw.sales_fact" | sed 's/\t/","/g;s/^/"/;s/$/"/;' > product-dim.csv; \
+-e "SELECT * FROM dw.product_dim" | sed 's/\t/","/g;s/^/"/;s/$/"/;' > product-dim.csv; \
 end_time=$(date +%s); \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
-176 sec (around 3 minutes) / 4,868,889,981 bytes (4.53 GB)
+178 sec (around 3 minutes) / 4,868,889,981 bytes (4.53 GB)
 
 
 ### 5. update to S3 ###
