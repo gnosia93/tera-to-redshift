@@ -241,5 +241,36 @@ end_time=$(date +%s); \
 elapsed=$(( end_time - start_time )); \
 echo $elapsed
 ```
-##### Completed 3.6 GiB/18.9 GiB (63.7 MiB/s) with 1 file(s) remaining72 sec #####
+##### Completed 3.6 GiB/18.9 GiB (63.7 MiB/s) with 1 file(s) / elapsed 301 sec #####
+
+
+### 6. Redshift Copy ###
+```
+CREATE TABLE product_dim (
+  product_key bigint NOT NULL AUTO_INCREMENT,
+  id1 bigint NOT NULL,
+  id2 bigint NOT NULL,
+  id3 bigint NOT NULL,
+  id4 bigint NOT NULL,
+  id5 bigint NOT NULL,
+  id6 bigint NOT NULL,
+  id7 bigint NOT NULL,
+  id8 bigint NOT NULL,
+  id9 bigint NOT NULL,
+  dummy1 varchar(200) NOT NULL,
+  dummy2 varchar(200) NOT NULL,
+  dummy3 varchar(200) NOT NULL,
+  dummy4 varchar(200) NOT NULL,
+  dummy5 varchar(200) NOT NULL,
+  dummy6 varchar(200) NOT NULL,
+  dummy7 varchar(200) NOT NULL,
+  dummy8 varchar(200) NOT NULL,
+  dummy9 varchar(200) NOT NULL,
+  sell_yn char(1) NOT NULL,
+  regdate datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY(product_key)
+) ENGINE=InnoDB;
+```
+
+
 
