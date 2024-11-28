@@ -100,13 +100,12 @@ the number of attributes stored within each record.
   - fact tables (Insert Only) - daily incremental migration is preferred, after initial bulk loading
   - dimension table (Insert / Update) - migrate at once while ETL stops.
   - Summary (Insert Only, But record count is small) - migrate at once while ETL stops 
-- Export with TPT which supports parallel processing  
+- Export with TPT which supports parallel processing
+- Migration Data Consistency - Table row count and the summation of 'Measure' column.
 
  
 ### Risk & Challenge ###
-- data integrity
-    - table count
-    - measure sum, group by sum     
+
 - migration time. -- reduce...해야함..
 - sct data agent problems.
   - at first, I used sct ata agent, later on replace sct agent with tpt. 
