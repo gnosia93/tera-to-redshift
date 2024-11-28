@@ -74,9 +74,9 @@ In case of dimension, Both Insert and Update is happened, so we will migrate it 
 - Number of CSV file : 4
 - Gizip Compressed : No
 - Estimated migration time per file (10M records, file size - 18.87 GB)
-  - export time : 714 sec (around 12 minutes)
-  - s3 upload time :  301 sec (acround 5 minutes)
-  - redshift copy time : 218 sec (around 4 minutes)
+  - export time : 714 sec 
+  - s3 upload time :  301 sec (63.7 MiB/s)
+  - redshift copy time : 218 sec 
   - total elapsed time : **1,233 sec (around 21 minutes)**
 
 
