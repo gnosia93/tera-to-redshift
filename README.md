@@ -93,13 +93,14 @@ the number of attributes stored within each record.
 ### Migration Architecture & ETL ###
 ![](https://github.com/gnosia93/tera-to-emr/blob/main/images/teradata-mig.png)
 
+- SCT for schema convertion.
 - Avaialbe Network Bandwith - 560Mbps (70MB/s)
 - Snowball is not adequate for this case, usaully takes more than 1 weeks for delivery between IDC and AWS, Upload data into snowball and S3 upload 
-- for fact table 
-  - daily based incremental migration with regdate column to reduce risk and due to low bandwidth of network.
-- for diemsion table / summary
-  - after stopping etl, perform migration
-- use SCT for schema convertion
+- Migration Strategy based on test. 
+  - fact tables (Insert Only) - daily incremental migration is preferred.
+  - dimension table (Insert / Update) - migrate at once while ETL stops.
+  - Summary (Insert Only, But record count is small) - migrate at once while ETL stops 
+  
 - 처음에는 sct 에이전트를 사용하였으나, 테스트시 hang 이슈가 발생하여 --> tpt 로 교체함.
 
  
