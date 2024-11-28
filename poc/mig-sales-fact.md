@@ -218,3 +218,17 @@ mysql> select data_length / 1000000
 +-----------------------+
 1 row in set (0.00 sec)
 ```
+
+### 4. export to csv file ###
+```
+start_time=$(date +%s);\
+mysql -u test -h ec2-43-200-2-190.ap-northeast-2.compute.amazonaws.com -p \
+-e "SELECT * FROM dw.sales_fact" | sed 's/\t/","/g;s/^/"/;s/$/"/;' > sales-fact.csv; \
+end_time=$(date +%s); \
+elapsed=$(( end_time - start_time )); \
+echo $elapsed
+```
+
+714 sec (around 12 minutes) / 20,261,627,575 bytes (18.87 GB)
+
+ % head -n 2 product-dim.csv
