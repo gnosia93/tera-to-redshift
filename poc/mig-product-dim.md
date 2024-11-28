@@ -278,7 +278,7 @@ SORTKEY(product_key);
 
 ```
 COPY sales_fact 
-FROM 's3://gnosia93-s3-tera-to-redshift/product-dim.csv.csv' 
+FROM 's3://gnosia93-s3-tera-to-redshift/product-dim.csv' 
 IAM_ROLE 'arn:aws:iam::499514681453:role/service-role/AmazonRedshift-CommandsAccessRole-20241127T183927'
 CSV IGNOREHEADER 1
 ```
