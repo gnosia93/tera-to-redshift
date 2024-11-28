@@ -277,10 +277,19 @@ SORTKEY(product_key);
 ```
 
 ```
-COPY sales_fact 
+COPY product_dim 
 FROM 's3://gnosia93-s3-tera-to-redshift/product-dim.csv' 
 IAM_ROLE 'arn:aws:iam::499514681453:role/service-role/AmazonRedshift-CommandsAccessRole-20241127T183927'
 CSV IGNOREHEADER 1
+DELIMITER ',';
+```
+
+
+If there is errors, you can see detail information from stl_load_erros table.
+```
+SELECT * 
+FROM stl_load_errors 
+ORDER BY query DESC, starttime DESC;
 ```
 
 
