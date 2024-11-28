@@ -107,7 +107,7 @@ the number of attributes stored within each record.
 ### Issues & Challenge ###
 
 - sct data agent hang for large volumn of table.
-- rollup / cube doesn't support 
+- rollup / cube doesn't support (redshift released these in Feb 28, 2023)
 
 
 ## POC Detail ##
