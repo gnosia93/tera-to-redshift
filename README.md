@@ -47,6 +47,7 @@ _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers
 - fact table only has insert.
 - a bunch of summary table exists (only insert) : daily, monthly.
 
+
 @@@ sales_fact @@@  
 To develope migration strategy, picked sales fact table which has a large amount of data volume.   
 _Below mutli dimensional model is not real diagram and just shown in order to improve your understandings._
@@ -60,7 +61,6 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
   - redshift copy time : 21.6 sec
   - total elapsed time : **70.6 sec**
 - Estimated Full loading time for 5 years : **35.8 Hours** (If using batch iteration based on daily interval)
-
 
 @@@ product_dim @@@  
 _https://www.tutorials24x7.com/mysql/guide-to-design-database-for-shopping-cart-in-mysql_     
@@ -93,7 +93,8 @@ the number of attributes stored within each record.
 ### Migration Architecture & ETL ###
 ![](https://github.com/gnosia93/tera-to-emr/blob/main/images/teradata-mig.png)
 
-- snowball is not adequate, it also takes time upload data into snowball, delivery, s3 upload time. 
+- Avaialbe Network Bandwith - 560Mbps (70MB/s)
+- Snowball is not adequate for this case, usaully takes more than 1 weeks for delivery between IDC and AWS, Upload data into snowball and S3 upload 
 - for fact table 
   - daily based incremental migration with regdate column to reduce risk and due to low bandwidth of network.
 - for diemsion table / summary
