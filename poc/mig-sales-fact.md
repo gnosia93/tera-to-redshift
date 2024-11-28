@@ -51,17 +51,16 @@ password = 'test'
 db = 'dw'
 charset = 'utf8'
 
+db_bigint_max_value = pow(2, 63) / 1000 - 1      # 9,223,372,036,854,776
+
 
 config = {'host':host, 'user':user, 'password':password, 'database':db, 'charset':charset}
 conn_pool = pymysqlpool.ConnectionPool(size = 100, maxsize = 200, name = 'db_pool', **config)
-
-
 
 def db_trunc(conn):
     sql = 'truncate dw.sales_fact'
     cursor = conn.cursor()
     cursor.execute(sql)
-
 
 def db_export(conn):
     sql = 'select count(1) from dw.sales_fact'
@@ -72,11 +71,10 @@ def db_export(conn):
     for tuple in rs:
         print(tuple)
 
-
-def db_import(conn_pool, tuple_cnt):
+def db_import(conn_pool, tuple_cnt, commit_interval):
     conn = conn_pool.get_connection()
     cursor = conn.cursor(pymysql.cursors.DictCursor)
-    commit_interval = tuple_cnt / 10
+  #  commit_interval = tuple_cnt / 10
   #  print("commit_interval : ", commit_interval)
     
     for i in range(tuple_cnt):
@@ -91,16 +89,66 @@ def db_import(conn_pool, tuple_cnt):
              %s,
              %s,
              %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
+             %s,
              rpad(%s, 200, '0'),
              rpad(%s, 200, '0')
         )'''
         
-        cursor.execute(sql, (0, i, i, i, i, i, i, i, i, i, 'dummy1_' + str(i), 'dummy2_' + str(i)))
+        cursor.execute(sql, 
+            (
+                0, 
+                db_bigint_max_value + 1,
+                db_bigint_max_value + 2,
+                db_bigint_max_value + 3,
+                db_bigint_max_value + 4,
+                db_bigint_max_value + 5,
+                db_bigint_max_value + 6,
+                db_bigint_max_value + 7,
+                db_bigint_max_value + 8,
+                db_bigint_max_value + 9,
+                db_bigint_max_value + 10,
+                db_bigint_max_value + 11,
+                db_bigint_max_value + 12,
+                db_bigint_max_value + 13,
+                db_bigint_max_value + 14,
+                db_bigint_max_value + 15,
+                db_bigint_max_value + 16,
+                db_bigint_max_value + 17,
+                db_bigint_max_value + 18,
+                db_bigint_max_value + 19,
+                db_bigint_max_value + 20,
+                db_bigint_max_value + 21,
+                db_bigint_max_value + 22,
+                db_bigint_max_value + 23,
+                db_bigint_max_value + 24,
+                db_bigint_max_value + 25,
+                db_bigint_max_value + 26,
+                db_bigint_max_value + 27,
+                'dummy1_' + str(i), 
+                'dummy2_' + str(i)
+            )
+        )
         if i % commit_interval == 0 or i == tuple_cnt - 1:
             conn.commit()
             
     conn.close()
-
 
 import_cnt = 1000000
 
@@ -109,18 +157,20 @@ conn = conn_pool.get_connection()
 db_trunc(conn)
 conn.close()
 
-
 # import table
 thread_pool = []
 start_time = time.time()
 
+thread_cnt = 100
+thread_tuple_cnt = 10000
+thread_commit_interval = 1000
+
 # generate 1M tuples
-for i in range(100):
-    t = threading.Thread(target=db_import, args=(conn_pool, 100000))
+for i in range(thread_cnt):
+    t = threading.Thread(target=db_import, args=(conn_pool, thread_tuple_cnt, thread_commit_interval))
     t.start()
     thread_pool.append(t)
     print(i, ' thread ', t.name, ' started...' )
-
 
 # print(thread_pool)
 for t in thread_pool:
@@ -139,17 +189,7 @@ conn = conn_pool.get_connection()
 conn.close()
 
 
-
-
 """
 https://stackoverflow.com/questions/71564954/pymysql-error-packet-sequence-number-wrong-got-1-expected-0    
-"""
-
-
-"""
-export sales_fact table to csv
-% mysql -u test -h ec2-43-200-2-190.ap-northeast-2.compute.amazonaws.com -p \
--e "SELECT * FROM dw.sales_fact" | sed 's/\t/","/g;s/^/"/;s/$/"/;' > sales_fact.csv
-Enter password:
 """
 ```
