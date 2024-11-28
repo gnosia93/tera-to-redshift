@@ -53,15 +53,13 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/fact-design.png)
 
-- Tuple size : 624 bytes
-- Avg Daily Insert : 82 만건 (daily 375 MB)
-  - 10.99 gb / month, 131.96 gb / year ---> 659.82 gb / 5 years 
+- Avg Daily Insert : 820K records (tuple size : 624 bytes)
 - Estimated migration time for daily data. 
   - export time : 34 sec
   - s3 upload time : 15 sec
   - redshift copy time : 21.6 sec
   - total elapsed time : **70.6 sec**
-- Estimated loading time for 5 years : 35.8 Hours (When using daily batch iteration)
+- Estimated Full loading time for 5 years : 35.8 Hours (When using daily batch iteration)
 
 
 @@@ product_dim @@@  
