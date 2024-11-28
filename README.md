@@ -61,7 +61,6 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
   - s3 upload time : 10 sec
   - redshift copy time : 14 sec
   - total elapsed time : 44 sec
-
 - estimated loading time for 5 years : 30.41 Hours
 
 
