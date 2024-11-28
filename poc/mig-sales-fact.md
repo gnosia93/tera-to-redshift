@@ -290,3 +290,8 @@ CREATE TABLE sales_fact (
 DISTKEY(sales_key) 
 SORTKEY(sales_key);
 ```
+```
+
+```
+
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/redshift-sales-fact.png)
