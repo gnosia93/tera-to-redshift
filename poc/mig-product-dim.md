@@ -318,4 +318,5 @@ DELIMITER ','
 MANIFEST;
 ```
 
+![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/redshift-product-dim-2.png)
 
