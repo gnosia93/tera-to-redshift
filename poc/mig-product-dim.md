@@ -246,8 +246,10 @@ echo $elapsed
 
 ### 6. Redshift Copy ###
 ```
+DROP TABLE product_dim;
+
 CREATE TABLE product_dim (
-  product_key bigint NOT NULL AUTO_INCREMENT,
+  product_key bigint NOT NULL,
   id1 bigint NOT NULL,
   id2 bigint NOT NULL,
   id3 bigint NOT NULL,
@@ -267,9 +269,11 @@ CREATE TABLE product_dim (
   dummy8 varchar(200) NOT NULL,
   dummy9 varchar(200) NOT NULL,
   sell_yn char(1) NOT NULL,
-  regdate datetime DEFAULT CURRENT_TIMESTAMP,
+  regdate datetime NOT NULL,
   PRIMARY KEY(product_key)
-) ENGINE=InnoDB;
+)
+DISTKEY(product_key) 
+SORTKEY(product_key);
 ```
 
 
