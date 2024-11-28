@@ -52,7 +52,7 @@ _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers
 To develope migration strategy, picked sales fact table which has a large amount of data volume.   
 _Below mutli dimensional model is not real diagram and just shown in order to improve your understandings._
 
-![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/fact-design.png)
+[](https://github.com/gnosia93/tera-to-redshift/blob/main/images/fact-design.png)
 
 - Avg Daily Insert : 820K records (tuple size : 624 bytes)
 - Estimated migration time for daily data. 
@@ -67,7 +67,7 @@ _https://www.tutorials24x7.com/mysql/guide-to-design-database-for-shopping-cart-
 Among Dimensions, product table is the largest one. we will use this table to calulate dimension table's migration time. 
 In case of dimension, Both Insert and Update is happened, so we will migrate it at once with parallel processing
 
-![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
+[](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
 
 - Total record count : 40M records (tuple size - 1,800 bytes)
 - AMP number : 4
