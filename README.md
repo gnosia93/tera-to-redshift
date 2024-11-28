@@ -76,7 +76,7 @@ In case of dimension, Both Insert and Update is happened, so we will migrate it 
 - Estimated migration time per file (10M records, file size - 18.87 GB)
   - export time : 714 sec 
   - s3 upload time :  301 sec (63.7 MiB/s)
-  - redshift copy time : 218 sec (3.63 Min) -> 
+  - redshift copy time : 218 sec (3.63 Min) -> for 40GB, took 13 Min 
   - total elapsed time : **1,233 sec (around 21 minutes)**
 
 
