@@ -88,24 +88,3 @@ https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html#ag
 
 
 
-
-
-### s3 file to redshift ###
-
-* https://stackoverflow.com/questions/67009644/how-to-import-load-data-from-csv-files-on-s3-bucket-into-redshift-using-aws-glue
-
-
-* [ETL | Incremental Data Load from Amazon S3 Bucket to Amazon Redshift Using AWS Glue](https://www.youtube.com/watch?v=RGSKeK9xow0)
-; s3 에 있는 파일을 update 한후 다시 etl job 을 수행하는 데모이다. 
-
-* [Simplify data ingestion from Amazon S3 to Amazon Redshift using auto-copy](https://aws.amazon.com/blogs/big-data/simplify-data-ingestion-from-amazon-s3-to-amazon-redshift-using-auto-copy/)
-; redshift 가 s3에 파일이 새롭게 올라오면 자동 카피하는 방식이다. 
-
-
-* [ETL with Multiple file processing using s3, Lambda and Glue Job](https://diwamishra21.medium.com/etl-with-multiple-file-processing-using-s3-lambda-and-glue-job-f0c62062fd53)
-
-* [schedule batch jobs /w AWS Data Pipeline](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-copydata-redshift.html)
-
-
-
-
