@@ -291,7 +291,11 @@ DISTKEY(sales_key)
 SORTKEY(sales_key);
 ```
 ```
-
+COPY sales_fact 
+FROM 's3://gnosia93-s3-tera-to-redshift/sales-fact.csv' 
+IAM_ROLE 'arn:aws:iam::499514681453:role/service-role/AmazonRedshift-CommandsAccessRole-20241127T183927'
+CSV IGNOREHEADER 1
+DELIMITER ',';
 ```
 
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/redshift-sales-fact.png)
