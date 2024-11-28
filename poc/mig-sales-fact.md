@@ -250,3 +250,43 @@ echo $elapsed
 Completed 445.0 MiB/884.9 MiB (59.7 MiB/s) with 1 file(s) remainind
 15 sec elapsed. 
 
+### 6. Redshift Copy ###
+
+```
+DROP TABLE sales_fact;
+CREATE TABLE sales_fact (
+  sales_key bigint NOT NULL,
+  id1 bigint NOT NULL,
+  id2 bigint NOT NULL,
+  id3 bigint NOT NULL,
+  id4 bigint NOT NULL,
+  id5 bigint NOT NULL,
+  id6 bigint NOT NULL,
+  id7 bigint NOT NULL,
+  id8 bigint NOT NULL,
+  id9 bigint NOT NULL,
+  id10 bigint NOT NULL,
+  id11 bigint NOT NULL,
+  id12 bigint NOT NULL,
+  id13 bigint NOT NULL,
+  id14 bigint NOT NULL,
+  id15 bigint NOT NULL,
+  id16 bigint NOT NULL,
+  id17 bigint NOT NULL,
+  id18 bigint NOT NULL,
+  id19 bigint NOT NULL,
+  id20 bigint NOT NULL,
+  id21 bigint NOT NULL,
+  id22 bigint NOT NULL,
+  id23 bigint NOT NULL,
+  id24 bigint NOT NULL,
+  id25 bigint NOT NULL,
+  id26 bigint NOT NULL,
+  id27 bigint NOT NULL,
+  dummy1 varchar(200) NOT NULL,
+  dummy2 varchar(200) NOT NULL,
+  PRIMARY KEY(sales_key)
+) 
+DISTKEY(sales_key) 
+SORTKEY(sales_key);
+```
