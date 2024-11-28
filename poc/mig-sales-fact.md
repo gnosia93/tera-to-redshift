@@ -1,6 +1,7 @@
 ### 1. create table ###
 
 ```
+DROP TABLE sales_fact;
 CREATE TABLE sales_fact (
   sales_key bigint NOT NULL AUTO_INCREMENT,
   id1 bigint NOT NULL,
