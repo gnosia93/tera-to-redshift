@@ -292,5 +292,26 @@ FROM stl_load_errors
 ORDER BY query DESC, starttime DESC;
 ```
 
+### 7. Multi File Copy ###
+[product-dim.manifest]
+```
+{
+  "entries": [
+    {"url":"s3://gnosia93-s3-tera-to-redshift/product-dim.csv", "mandatory":true},
+    {"url":"s3://gnosia93-s3-tera-to-redshift/product-dim-2.csv", "mandatory":true},
+    {"url":"s3://gnosia93-s3-tera-to-redshift/product-dim-3.csv", "mandatory":true},
+    {"url":"s3://gnosia93-s3-tera-to-redshift/product-dim-4.csv", "mandatory":true}
+  ]
+}
+```
+
+```
+COPY product_dim 
+FROM 's3://gnosia93-s3-tera-to-redshift/product-dim.manifest' 
+IAM_ROLE 'arn:aws:iam::499514681453:role/service-role/AmazonRedshift-CommandsAccessRole-20241127T183927'
+CSV IGNOREHEADER 1
+DELIMITER ','
+MANIFEST;
+```
 
 
