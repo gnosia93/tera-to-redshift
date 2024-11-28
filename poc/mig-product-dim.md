@@ -306,6 +306,10 @@ ORDER BY query DESC, starttime DESC;
 ```
 
 ```
+aws s3 cp product-dim.manifest s3://gnosia93-s3-tera-to-redshift
+```
+
+```
 COPY product_dim 
 FROM 's3://gnosia93-s3-tera-to-redshift/product-dim.manifest' 
 IAM_ROLE 'arn:aws:iam::499514681453:role/service-role/AmazonRedshift-CommandsAccessRole-20241127T183927'
