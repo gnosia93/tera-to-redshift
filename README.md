@@ -59,9 +59,9 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 - Estimated migration time for daily data. 
   - export time : 34 sec
   - s3 upload time : 15 sec
-  - redshift copy time : ? sec
-  - total elapsed time : 44 sec
-- estimated loading time for 5 years : 30.41 Hours
+  - redshift copy time : 21.6 sec
+  - total elapsed time : **70.6 sec**
+- Estimated loading time for 5 years : 35.8 Hours (When using daily batch)
 
 
 @@@ product_dim @@@  
