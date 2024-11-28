@@ -10,7 +10,7 @@ Tasks are consist of folllowing two categories.
 ### Customer Context ###
 
 - Built EDW on top of Teradata appliance at onpremise.
-- Data is ingested using ETL from department stores and online mall.
+- Data is ingested using ETL from department stores(9) and online mall.
 - Analyze their customer and marketing data and wanted to reduce TCO.
 - Considering Predictive analytics in addtion to Descriptive analytics(BI).
 
@@ -46,7 +46,7 @@ _In data warehousing, "SCD" stands for "Slowly Changing Dimension," which refers
 - dimension table has insert and update.
 - fact table only has insert.
 - a bunch of summary table exists (only insert) : daily, monthly.
-- sales_fact and product_dim are the largest table in each domain. 
+- sales_fact and product_dim are the largest table in each domain.
 
 @@@ sales_fact @@@  
 To develope migration strategy, picked sales fact table which has a large amount of data volume.   
