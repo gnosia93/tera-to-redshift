@@ -72,13 +72,14 @@ In case of dimension, Both Insert and Update is happened, so we will migrate it 
 ![](https://github.com/gnosia93/tera-to-redshift/blob/main/images/product-dim.png)
 
 - Tuple size : 1800 bytes. 
-- Total record count : 40M records (16.76 gb * 4EA = 67.04 gb)
+- Total record count : 40M records 
 - AMP number : 4
-- Estimated migration time for each AMP (10M records)
-  - export time : 176 sec
-  - s3 upload time : 72 sec
-  - redshift copy time : ?? sec
-  - total elapsed time : ?? sec
+- Number of CSV file : 4
+- Estimated migration time per file (10M records, 18.87 GB)
+  - export time : 714 sec (around 12 minutes)
+  - s3 upload time :  301 sec (acround 5 minutes)
+  - redshift copy time : 
+  - total elapsed time : 
 
 
 
