@@ -195,24 +195,26 @@ https://stackoverflow.com/questions/71564954/pymysql-error-packet-sequence-numbe
 ```
 
 ### 3. check table size and row length ###
+```
 mysql> SELECT table_name,
-    ->        ROUND((data_length+index_length)/1024/1024, 1) AS 'Size(MB)'
-    -> FROM information_schema.tables
-    -> where table_name = 'product_dim';
-+-------------+----------+
-| TABLE_NAME  | Size(MB) |
-+-------------+----------+
-| product_dim |  26451.0 |
-+-------------+----------+
-1 row in set (0.00 sec)
+    ->     ROUND((data_length+index_length)/1024/1024, 1) AS 'Size(MB)'
+    ->     FROM information_schema.tables
+    ->     where table_name = 'sales_fact';
++------------+----------+
+| TABLE_NAME | Size(MB) |
++------------+----------+
+| sales_fact |    802.0 |
++------------+----------+
+1 row in set (0.01 sec)
 
-mysql> select data_length / 10000000
-    -> from information_schema.tables
-    -> where table_schema = 'dw'
-    -> and table_name = 'product_dim';
-+------------------------+
-| data_length / 10000000 |
-+------------------------+
-|              2773.5884 |
-+------------------------+
+mysql> select data_length / 1000000
+    ->     from information_schema.tables
+    ->     where table_schema = 'dw'
+    ->     and table_name = 'sales_fact';
++-----------------------+
+| data_length / 1000000 |
++-----------------------+
+|              840.9580 |
++-----------------------+
 1 row in set (0.00 sec)
+```
