@@ -57,7 +57,7 @@ _Below mutli dimensional model is not real diagram and just shown in order to im
 - Avg Daily Insert : 820K records (tuple size : 624 bytes)
 - Estimated migration time for daily data. 
   - export time : 34 sec
-  - s3 upload time : 15 sec
+  - s3 upload time : 15 sec (59.7 MiB/s)
   - redshift copy time : 21.6 sec
   - total elapsed time : **70.6 sec**
 - Estimated Full loading time for 5 years : **35.8 Hours** (If using batch iteration based on daily interval)
