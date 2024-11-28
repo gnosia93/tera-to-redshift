@@ -79,7 +79,7 @@ In case of dimension, Both Insert and Update is happened, so we will migrate it 
   - export time : 714 sec (around 12 minutes)
   - s3 upload time :  301 sec (acround 5 minutes)
   - redshift copy time : 218 sec (around 4 minutes)
-  - total elapsed time : ##### 1,233 sec (around 21 minutes) #####
+  - total elapsed time : **1,233 sec (around 21 minutes)**
 
 
 
