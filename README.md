@@ -1,6 +1,6 @@
 # tera-to-redshift
 
-This document describe DW migration from teradata to amazon redshift. Altough this article is written based on hypothetical scenario seeded by my project experiences but expect verty helpful for real world migration. 
+This document describe DW migration from teradata to amazon redshift. Altough this article is written based on hypothetical scenario seeded by my project experiences but expecting that this is verty helpful for real world migration. 
 Tasks are consist of folllowing two categories.
 
 - _Develope Redshift Migration Strategy_
